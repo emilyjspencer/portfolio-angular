@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { ErrorComponent } from './error/error.component';
+import { AccordionItemComponent } from './accordion/accordion-item/accordion-item.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ErrorComponent } from './error/error.component';
     FooterComponent,
     HeaderComponent,
     AccordionComponent,
-    ErrorComponent
+    ErrorComponent,
+    AccordionItemComponent
   ],
   imports: [
     BrowserModule,
