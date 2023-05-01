@@ -1,12 +1,13 @@
 <h1>Skills</h1>
-<ul>
-  <li>Angular</li>
-  <li>React</li>
-  <li>Vanilla JavaScript</li>
-  <li>Jest</li>
-  <li>Storybook</li>
-  <li>TypeScript</li>
-  <li>RxJS</li>
-  <li>NodeJS</li>
-  <li>Ruby</li>
+<ul class="skills">
+  <li *ngFor="let skill of skills" (click)="learnMoreSkills()">
+    <p>{{skill}}</p>
+  </li>
+</ul>
+
+<h2>Lesser Skills</h2>
+<ul class="lesser-skills">
+  <li *ngFor="let skill of lesserSkills" (click)="learnMoreLessSkills()">
+    <p>{{skill}}</p>
+  </li>
 </ul>

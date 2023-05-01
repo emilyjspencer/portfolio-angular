@@ -1,0 +1,46 @@
+.accordion {
+  height: 100px;
+  overflow: hidden;
+  transition: height 0.5s cubic-bezier(1, 0, 0.41, 1.01);
+}
+
+h2 {
+  padding: 0;
+}
+
+.accordion-group {
+  width: 800px;
+  height: 500px;
+  padding-top: 8px;
+  padding-bottom: 20px;
+  padding-right: 220px;
+  padding-left: 220px;
+}
+
+.accordion__container {
+  height: 100px;
+}
+
+.accordion.is-active {
+  height: 180px;
+}
+
+.accordion.is-active .accordion__description__container {
+  opacity: 1;
+}
+.accordion__title__container {
+  cursor: pointer;
+  height: 100px;
+  padding: 0 5px;
+  position: relative;
+}
+.accordion__title {
+  line-height: 100px;
+  text-transform: lowercase;
+}
+.accordion__description__container {
+  opacity: 1;
+  transition: opacity .6s;
+  padding: 5px;
+}
+
