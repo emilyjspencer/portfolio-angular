@@ -1,11 +1,9 @@
-.zoom {
-  background-color:pink;
-  color:blue;
+.logo {
+ padding-top: 72px;
 }
 
-.zoom:hover{
+.logo:hover{
   border:none;
-  background-color:pink;
   color:blue;
 }
 
@@ -22,5 +20,9 @@
   30% {opacity:0}
   80% {opacity:0}
   100% {opacity:1}
+}
+
+h2 {
+  margin-top: -80px;
 }
 
