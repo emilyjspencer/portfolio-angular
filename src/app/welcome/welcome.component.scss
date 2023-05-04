@@ -1,0 +1,26 @@
+.zoom {
+  background-color:pink;
+  color:blue;
+}
+
+.zoom:hover{
+  border:none;
+  background-color:pink;
+  color:blue;
+}
+
+.welcomeContainer {
+  text-align: center;
+}
+
+.fadeout{
+  animation:fadeoutTitle 7s  ease-in-out;
+}
+
+@keyframes fadeoutTitle {
+  0% {opacity:1}
+  30% {opacity:0}
+  80% {opacity:0}
+  100% {opacity:1}
+}
+

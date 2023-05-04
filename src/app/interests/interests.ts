@@ -3,11 +3,11 @@ import { IInterest } from "src/interfaces/IInterest"
 export const INTERESTS: IInterest[] = [
   {
   title: "Wellbeing",
-  description: "I've been interested in meditation and buddhism since my university days. I'm currently especially interested in the Gut-Brain axis and the microbiome. Proponent of Professor Tim Spector (Kings College London) and Professor Felice Jacka - both who have examined the impact that improving gut diversity may have on improving mood. I enjoy attending wellness events such as Balance Festival, which I will be in attendance at this year."
+  description: "I've been interested in meditation and buddhism since my university days.\n I'm currently especially interested in the Gut-Brain axis and the microbiome.\n Proponent of Professor Tim Spector (Kings College London), Dr Will Bulsiewicz (author of Fibre Fuelled), and Professor Felice Jacka - all who have examined the impact that improving gut diversity may have on improving mood.\n I enjoy attending wellness events such as Balance Festival, which I will be in attendance at this year."
 },
 {
   title: "Fitness and exercise",
-  description: "I'm a member of the FitDevs community; a community of developers who encourage each other to improve ourselves, our physical and mental health through exercise. Just Strong Ambassador. Try to do at least 300 minutes of vigorous exercise each week."
+  description: "I'm a member of the FitDevs community; a community of developers who encourage each other to improve ourselves, our physical and mental health through exercise.\n Just Strong Ambassador.\n Try to do at least 300 minutes of vigorous exercise each week."
 },
 {
   title: "Mental Health",
