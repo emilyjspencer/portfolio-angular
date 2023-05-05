@@ -16,8 +16,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { ErrorComponent } from './error/error.component';
-import { FormsModule } from '@angular/forms';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { CardComponent } from './card/card.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,19 +33,18 @@ import { WelcomeComponent } from './welcome/welcome.component';
     AccordionComponent,
     ErrorComponent,
     WelcomeComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    FormsModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InterestsDataService, { dataEncapsulation: false }
     ),
-    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

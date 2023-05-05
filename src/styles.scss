@@ -1,8 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-body {
-  background-color: rgb(236, 231, 225);
-  font-family: Montserrat;
+@use './colors.scss';
 
+body {
+  background-color: colors.$portfolio-background-color;
+  font-family: Montserrat;
 }
 
 
