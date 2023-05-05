@@ -1,3 +1,5 @@
+@use '../../sizes.scss';
+
 .projects-container {
   display: flex;
   flex-direction: row;
@@ -5,12 +7,10 @@
 }
 
 li.projects-list  {
-
   style-type: none !important;
-
 }
 
 img {
-  width: 200px;
-  height: 300px;
+  width: sizes.$portfolio-size-200;
+  height: sizes.$portfolio-size-300;
 }

@@ -1,14 +1,19 @@
+@use '../../colors.scss';
+@use '../../sizes.scss';
+
 :host {
-  padding: 10px;
+  padding: sizes.$portfolio-size-10
 }
 
 .card-container {
-  width: 400px;
-  background-color: white;
-  height: 400px;
+  width: sizes.$portfolio-size-400;
+  background-color: colors.$portfolio-color-white;
+  height: sizes.$portfolio-size-400;
+  padding: sizes.$portfolio-size-10;
+  box-shadow: sizes.$portfolio-size-5 sizes.$portfolio-size-10 #d3d2d2;
 }
 
 
 img {
-  max-width: 400px;
+  max-width: sizes.$portfolio-size-400;
 }
