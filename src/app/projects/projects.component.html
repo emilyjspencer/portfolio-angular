@@ -1,16 +1,11 @@
 <app-nav></app-nav>
-<p>Projects</p>
-
-<ul>
-  <li>Wellbeing</li>
-  <li>Guardian News Angular, Guardian News React</li>
-  <li>Alohomora</li>
-  <li>Global Reading Project</li>
-  <li>Chitter</li>
+<h1>Projects</h1>
+<div class="projects-container">
+<ul class="projects-list" *ngFor="let project of projects">
+  <li><app-card [title]="project.title" [description]="project.description" [image]="project.image" [link]="project.link"></app-card></li>
 </ul>
+</div>
 
-<app-card></app-card>
-<app-card></app-card>
-<app-card></app-card>
 
 <app-footer></app-footer>
+

@@ -18,6 +18,7 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { ErrorComponent } from './error/error.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { CardComponent } from './card/card.component';
+import { LinkDirective } from './link.directive';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { CardComponent } from './card/card.component';
     ErrorComponent,
     WelcomeComponent,
     CardComponent,
+    LinkDirective,
   ],
   imports: [
     BrowserModule,

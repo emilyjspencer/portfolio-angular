@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IInterest } from 'src/interfaces/IInterest';
+
 
 
 @Component({
