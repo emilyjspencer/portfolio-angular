@@ -14,6 +14,8 @@ export class ProjectsComponent implements OnInit {
   @Input() description!: string;
   @Input() image!: string;
   @Input() link!: string;
+  @Input() githubLink!: string
+  @Input() technologies!: string;
 
   constructor() { }
 

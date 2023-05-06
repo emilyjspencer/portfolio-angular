@@ -12,6 +12,8 @@ export class CardComponent implements OnInit {
   @Input() description = '';
   @Input() image = '';
   @Input() link = '';
+  @Input() githubLink = '';
+  @Input() technologies = '';
 
   constructor() { }
 

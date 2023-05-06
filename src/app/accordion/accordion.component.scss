@@ -1,8 +1,11 @@
+@use '../../colors.scss';
+@use '../../sizes.scss';
+
+
 .accordion {
-  height: 100px;
+  height: sizes.$portfolio-size-100;
   overflow: hidden;
   transition: height 0.8s cubic-bezier(1, 0, 0.41, 1.01);
-  border: solid grey 1px;
 }
 
 h2 {
@@ -10,14 +13,13 @@ h2 {
 }
 
 .accordion-group {
-  width: 800px;
-  height: 500px;
+  width: sizes.$portfolio-size-800;
+  height: sizes.$portfolio-size-500;
   padding: 8px 20px 220px 220px;
 }
 
 .accordion__container {
   height: 100px;
-  //border: solid grey 1px;
 }
 
 .accordion.is-active {

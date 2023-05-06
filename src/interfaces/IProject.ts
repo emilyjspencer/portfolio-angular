@@ -4,4 +4,6 @@ export interface IProject {
   description: string;
   image: string;
   link: string;
+  githubLink: string;
+  technologies: string;
 }

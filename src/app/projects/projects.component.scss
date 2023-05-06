@@ -3,14 +3,23 @@
 .projects-container {
   display: flex;
   flex-direction: row;
-  style-type: none
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
-li.projects-list  {
-  style-type: none !important;
-}
 
 img {
   width: sizes.$portfolio-size-200;
   height: sizes.$portfolio-size-300;
+}
+
+ul {
+  list-style-type: none;
+  padding: 24px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Montserrat;
 }

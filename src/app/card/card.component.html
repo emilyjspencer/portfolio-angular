@@ -1,14 +1,17 @@
 <div class="card-container">
   <div class="card-header">
-    <div mat-card-avatar class="example-header-image"></div>
+    <div class="header-image"></div>
     <div class="card-title">{{title}}</div>
     <div class="card-content">{{subtitle}}</div>
   </div>
-  <img src="" alt="">
+  <img src="{{image}}" alt="">
   <div class="card-content">
     <p>
       {{description}}
     </p>
+    <p>Deployed link:{{link}}</p>
+    <p>GitHub link: {{githubLink}}</p>
+    <p>Technologies used: {{technologies}}</p>
+    <p appLink>Testing directive</p>
   </div>
-
 </div>

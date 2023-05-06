@@ -6,14 +6,19 @@
 }
 
 .card-container {
-  width: sizes.$portfolio-size-400;
+  width: sizes.$portfolio-size-340;
   background-color: colors.$portfolio-color-white;
   height: sizes.$portfolio-size-400;
   padding: sizes.$portfolio-size-10;
   box-shadow: sizes.$portfolio-size-5 sizes.$portfolio-size-10 #d3d2d2;
 }
 
+.card-content {
+  font-size: 14px;
+}
+
 
 img {
-  max-width: sizes.$portfolio-size-400;
+  max-width: sizes.$portfolio-size-340;
+  max-height: sizes.$portfolio-size-200;
 }
