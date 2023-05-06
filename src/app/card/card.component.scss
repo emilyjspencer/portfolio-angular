@@ -7,7 +7,9 @@
 
 .card-container {
   width: sizes.$portfolio-size-320;
-  background-color: colors.$portfolio-color-white;
+ // background-color: colors.$portfolio-color-white;
+ background-color: #f7f7f7;
+ border-radius: 6px;
   height: sizes.$portfolio-size-400;
   padding: sizes.$portfolio-size-10;
   box-shadow: sizes.$portfolio-size-4 sizes.$portfolio-size-4 #e1e0e0;

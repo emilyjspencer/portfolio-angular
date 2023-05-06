@@ -1,6 +1,6 @@
 <app-nav></app-nav>
 <div class="accordion-container">
-  <h2>I have worked with the following technologies</h2>
+  <h4>I have learned and/or worked with the following technologies</h4>
 
   <app-accordion *ngFor="let skill of frontend">
     <app-accordion-item [title]="skill.title" [content]="skill.description"></app-accordion-item>
@@ -18,8 +18,6 @@
   <app-accordion *ngFor="let skill of other">
     <app-accordion-item [title]="skill.title" [content]="skill.description"></app-accordion-item>
   </app-accordion>
-
-
 </div>
 
 <app-footer></app-footer>

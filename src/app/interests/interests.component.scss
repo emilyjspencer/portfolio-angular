@@ -5,3 +5,245 @@ h1 {
 .accordion-container {
 
 }
+
+.dance {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  border-radius: 50%;
+  margin: 10px;
+  box-sizing: border-box;
+  background-color: rgb(204, 201, 201);
+  border: solid  #bdb3b3 20px;
+}
+
+.physical {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgb(204, 201, 201);
+  border-radius: 50%;
+  margin: 10px;
+  border: solid  #bdb3b3 20px;
+}
+
+.piano {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgb(204, 201, 201);
+  border-radius: 50%;
+  margin: 10px;
+  border: solid  #bdb3b3 20px;
+}
+
+.performingarts {
+  display: flex;
+  word-wrap: normal;
+  flex-direction: column;
+  background-color: #d1c7c7;
+  height: 800px;
+  padding-right: 100px;
+  padding-left: 100px;
+
+}
+
+.performingtext {
+  margin-left: 50px;
+  margin-right: 50px;
+  position: relative;
+  bottom: 110px;
+}
+
+.performingimages {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  position: relative;
+  bottom: 55px;
+}
+
+.performingtitle {
+ padding: 10px;
+ position: relative;
+ top: 10px;
+ margin: auto;
+ background-color: #d1c7c7;
+}
+
+h3 {
+  position: relative;
+  bottom: -400px;
+}
+
+
+.lang {
+  background-color:  #e4d1d1;
+}
+
+.languages {
+  background-color:  #c7c0c0;
+
+}
+
+.languagesss {
+  background-color:  #c7c0c0;
+  position: relative;
+  bottom: 250px;
+  left: 150px;
+}
+
+.langtext {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.langtext2 {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.grad {
+  background-color:  rgb(197, 193, 193);
+  height: 30px;
+}
+
+.grad2 {
+  background-color:  rgb(235, 227, 227);
+  height: 30px;
+}
+
+.grad3 {
+  background-color:  rgb(229, 226, 226);
+  height: 30px;
+}
+
+.grad4 {
+  background-color:  rgb(235, 231, 231);
+  height: 30px;
+}
+
+.grad5 {
+  background-color:  rgb(240, 234, 234);
+  height: 30px;
+}
+
+.grad6 {
+  background-color:  rgb(243, 237, 237);
+  height: 30px;
+}
+
+.grad7 {
+  background-color:  rgb(248, 244, 244);
+  height: 30px;
+}
+
+.wellbeing {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+.athenacircle {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  margin: 10px;
+  box-sizing: border-box;
+  border: solid  #bdb3b3 20px;
+  padding: 15px;
+}
+
+.googlecircle {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  margin: 10px;
+  box-sizing: border-box;
+  border: solid  #bdb3b3 20px;
+  padding: 15px;
+}
+
+.railscircle {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  margin: 10px;
+  box-sizing: border-box;
+  border: solid  #bdb3b3 20px;
+  padding: 15px;
+}
+
+
+.nodecircle {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  margin: 10px;
+  box-sizing: border-box;
+  border: solid  #bdb3b3 20px;
+  padding: 15px;
+}
+
+.javacircle {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  margin: 10px;
+  box-sizing: border-box;
+  border: solid  #bdb3b3 20px;
+  padding: 15px;
+}
+
+.twittercircle {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  margin: 10px;
+  box-sizing: border-box;
+  border: solid  #bdb3b3 20px;
+  padding: 15px;
+}
+
+.techtext {
+  margin-left: 80px;
+  margin-right: 80px;
+  padding: 20px;
+}
+
+.techtitle {
+  position: relative;
+  bottom: 250px;
+  left: 170px;
+}
+
+.techimages {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 120px;
+}
+
+.tech {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.tech2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.techie {
+  background-color: #d1c7c7;
+  height: 1050px;
+}
