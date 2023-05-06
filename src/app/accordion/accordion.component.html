@@ -1,15 +1,3 @@
-<div class="accordion-group">
-  <div *ngFor="let accordion of accordionsItems, let i = index">
-    <div class="accordion" [ngClass]="{'is-active' : activeIndex === i}">
-      <div class="accordion__container">
-        <div class="accordion__title__container" (click)="toggle($event, i)">
-          <h2 class="accordion__title">{{ accordion.title }}</h2>
-        </div>
-        <div class="accordion__description__container">
-          <div class="accordion__description">{{ accordion.description }}</div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div>
+  <ng-content select="app-accordion-item"></ng-content>
 </div>
-

@@ -40,25 +40,25 @@ export const PROJECTS: IProject[] = [
 {
   title: "Portfolio (React)",
   subtitle: "",
-  description: "Testing React Portfolio",
-  image: "../../assets/images/ocean.jpg",
-  link: "www.google.com",
-  githubLink: "",
+  description: "Portfolio site I built using React",
+  image: "../../assets/images/portfolioreact2.png",
+  link: "",
+  githubLink: "https://github.com/emilyjspencer/Portfolio-Emily",
   technologies: "React"
 },
 {
-  title: "Wellbeing",
+  title: "Wellbeing (WIP)",
   subtitle: "",
-  description: "Testing Wellbeing",
+  description: "A wellbeing app featuring animated breathing exercise, a fitness tracker, mood tracker, a vision board , gratitude journal, affirmations",
   image: "../../assets/images/ocean.jpg",
   link: "www.google.com",
   githubLink: "",
-  technologies: "Angular"
+  technologies: "Angular, ChartJS, AWS Lambda, RxJS"
 },
 {
   title: "Acebook",
   subtitle: "",
-  description: "Testing Acebook",
+  description: "A Facebook clone built using the Rails framework",
   image: "../../assets/images/ocean.jpg",
   link: "",
   githubLink: "https://github.com/emilyjspencer/acebook-inSANE",
@@ -67,7 +67,7 @@ export const PROJECTS: IProject[] = [
 {
   title: "Medication Tracker",
   subtitle: "",
-  description: "Testing Medication Tracker",
+  description: "Keep track of your daily medication. Daily reminders. Receive warnings when stock is low",
   image: "../../assets/images/ocean.jpg",
   link: "www.google.com",
   githubLink: "",
@@ -77,7 +77,7 @@ export const PROJECTS: IProject[] = [
   title: "Presents Planner",
   subtitle: "",
   description: "A React application. Test-driven with Jasmine and Enzyme",
-  image: "../../assets/images/ocean.jpg",
+  image: "../../assets/images/presents.png",
   link: "http://pale-plastic.surge.sh",
   githubLink: "https://github.com/emilyjspencer/Bucket-List-TDD-React.git",
   technologies: "React, Jasmine, Enzyme"
@@ -86,7 +86,7 @@ export const PROJECTS: IProject[] = [
   title: "Guardian News",
   subtitle: "",
   description: "A React application which calls on the Guardian API",
-  image: "../../assets/images/ocean.jpg",
+  image: "../../assets/images/guardian.png",
   link: "http://sable-notebook.surge.sh/",
   githubLink: "https://github.com/emilyjspencer/Guardian-News-React.git",
   technologies: ""

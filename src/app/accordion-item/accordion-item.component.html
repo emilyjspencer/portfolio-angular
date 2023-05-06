@@ -1,0 +1,16 @@
+
+<div class="accordion-container">
+<div class="accordion-header" (click)="toggleAccordion()">
+  <div class="accordion-title">
+      {{title}}
+  </div>
+  <div [@rotate]="!hideContent? 'default': 'rotated'"><i class="fa-solid fa-angle-down"></i>
+  </div>
+</div>
+<div [@collapseAccordion]="!hideContent? 'initial': 'final'">
+  <div class="acc-body">
+    {{content}}
+      <ng-content></ng-content>
+  </div>
+</div>
+</div>

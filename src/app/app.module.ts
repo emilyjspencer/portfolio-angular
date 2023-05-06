@@ -14,11 +14,15 @@ import { InterestsComponent } from './interests/interests.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-import { AccordionComponent } from './accordion/accordion.component';
+import { AccordionItemComponent } from './accordion-item/accordion-item.component';
 import { ErrorComponent } from './error/error.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { CardComponent } from './card/card.component';
 import { LinkDirective } from './link.directive';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faGhost, faGifts, faSmile } from '@fortawesome/free-solid-svg-icons';
+import { AccordionComponent } from './accordion/accordion.component';
 
 @NgModule({
   declarations: [
@@ -31,17 +35,19 @@ import { LinkDirective } from './link.directive';
     NavComponent,
     FooterComponent,
     HeaderComponent,
-    AccordionComponent,
+    AccordionItemComponent,
     ErrorComponent,
     WelcomeComponent,
     CardComponent,
     LinkDirective,
+    AccordionComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    FontAwesomeModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InterestsDataService, { dataEncapsulation: false }
     ),
@@ -49,4 +55,11 @@ import { LinkDirective } from './link.directive';
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+    library.add(faSmile);
+    library.add(faGifts);
+    library.add(faGhost)
+
+  }
+ }

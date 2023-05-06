@@ -1,0 +1,32 @@
+@use '../../colors.scss';
+@use '../../sizes.scss';
+
+.accordion-title {
+  text-transform: uppercase;
+}
+
+.accordion-container {
+  transition: height 0.8s cubic-bezier(1, 0, 0.41, 1.01);
+}
+
+.accordion-body {
+  display: none;
+  opacity: 1;
+  transition: opacity .9s;
+}
+
+.accordion-body.active {
+  display: block;
+  animation: fadeIn .8s;
+  -webkit-animation: fadeIn .8s;
+}
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; transform: scale(0); }
+    to { opacity: 1; transform: scale(1); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0); }
+    to { opacity: 1; transform: scale(1); }
+}
+

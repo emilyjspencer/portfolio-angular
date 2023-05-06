@@ -1,8 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @use './colors.scss';
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
 
 body {
   background-color: colors.$portfolio-background-color;
+}
+
+.fab {
+  height: 200px;
+  width: 200px;
 }
 
 

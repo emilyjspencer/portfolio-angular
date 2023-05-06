@@ -1,6 +1,7 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
@@ -15,6 +16,7 @@ import { Router } from '@angular/router';
   ]
 })
 export class WelcomeComponent implements OnInit {
+  faCoffee = faCoffee
 
   constructor(private route: Router) { }
 
@@ -22,16 +24,19 @@ export class WelcomeComponent implements OnInit {
   name = '';
 
   ngOnInit(): void {
-    //this.fadeIn();
 
   }
 
   zoomIn() {
     this.state = true;
     setTimeout(() => {
-      console.log('zoomIn called')
       this.route.navigate(["/about"]);
       }, 4000)
+   }
+
+   visitSocialLink() {
+    this.route.navigate([""]);
+    console.log('visitSocialLink was called')
    }
 
 
