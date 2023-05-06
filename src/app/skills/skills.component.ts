@@ -15,7 +15,7 @@ export class SkillsComponent  {
   @Input() backend: ISkill[] = [];
   @Input() other: ISkill[] = [];
   @Input() title!: string;
-  @Input() description!: string;
+  @Input() description!: string[];
 
   constructor(private skill: SkillsService){}
 
@@ -28,7 +28,6 @@ export class SkillsComponent  {
 
   fetchFrontendSkills() {
    this.frontend = this.skill.getFrontendSkills()
-   console.log(this.frontend)
   }
   fetchDesignSkills() {
     this.design = this.skill.getDesignSkills()

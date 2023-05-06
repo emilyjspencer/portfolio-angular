@@ -1,5 +1,6 @@
 <app-nav></app-nav>
 <div class="accordion-container">
+  <h3>Skills, Education and experience</h3>
   <h4>I have learned and/or worked with the following technologies</h4>
 
   <app-accordion *ngFor="let skill of frontend">
@@ -18,6 +19,21 @@
   <app-accordion *ngFor="let skill of other">
     <app-accordion-item [title]="skill.title" [content]="skill.description"></app-accordion-item>
   </app-accordion>
+
+  <h2>Education</h2>
+  <h3>Makers Academy</h3>
+  <i class="fa-brands fa-square-js"></i>
+
+  <h3>FDM</h3>
+
+  <i class="fa-brands fa-react"></i>
+  <i class="fa-brands fa-java"></i>
+  <i class="fa-brands fa-python"></i>
+  <i class="fa-solid fa-database"></i>
+
+  <h2>Experience</h2>
+  <p>Software Development consultant</p>
+  <app-card></app-card>
 </div>
 
 <app-footer></app-footer>

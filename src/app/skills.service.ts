@@ -16,21 +16,17 @@ export class SkillsService {
 
   getFrontendSkills() {
     return this.frontend;
-    console.log(this.frontend)
   }
 
   getDesignSkills() {
-    return this.design;
-    console.log(this.design)
+   return this.design;
   }
 
   getBackendSkills() {
-    return this.backend;
-    console.log(this.backend)
+   return this.backend;
   }
 
   getOtherSkills() {
     return this.other;
-    console.log(this.other)
   }
 }
