@@ -7,13 +7,13 @@ import { state, style, trigger } from '@angular/animations';
   styleUrls: ['./accordion-item.component.scss'],
   animations: [
     trigger('collapseAccordion', [
-      state('initial', style({
+      state('start', style({
         height: '0',
         overflow: 'hidden',
         opacity: '1',
         visibility: 'hidden'
       })),
-      state('final', style({
+      state('end', style({
         overflow: 'hidden'
       })),
     ]),
@@ -27,14 +27,14 @@ export class AccordionItemComponent {
 
 @Input() title!: string;
 
-@Input() content!: string;
+@Input() content!: string | string[];
 
-  hideContent = false;
+hideContent = false;
 
-  constructor() { }
+constructor() { }
 
-  toggleAccordion() {
-    this.hideContent = !this.hideContent;
-  }
+toggleAccordion() {
+  this.hideContent = !this.hideContent;
+}
 
 }

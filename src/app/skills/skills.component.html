@@ -1,17 +1,25 @@
 <app-nav></app-nav>
-<h1>Skills</h1>
-<ul class="skills">
-  <li *ngFor="let skill of skills" (click)="learnMoreSkills()">
-    <p>{{skill}}</p>
-  </li>
-</ul>
-<app-accordion></app-accordion>
+<div class="accordion-container">
+  <h2>I have worked with the following technologies</h2>
 
-<h2>Lesser Skills</h2>
-<ul class="lesser-skills">
-  <li *ngFor="let skill of lesserSkills" (click)="learnMoreLessSkills()">
-    <p>{{skill}}</p>
-  </li>
-</ul>
+  <app-accordion *ngFor="let skill of frontend">
+    <app-accordion-item [title]="skill.title" [content]="skill.description"></app-accordion-item>
+  </app-accordion>
+
+
+  <app-accordion *ngFor="let skill of design">
+    <app-accordion-item [title]="skill.title" [content]="skill.description"></app-accordion-item>
+  </app-accordion>
+
+  <app-accordion *ngFor="let skill of backend">
+    <app-accordion-item [title]="skill.title" [content]="skill.description"></app-accordion-item>
+  </app-accordion>
+
+  <app-accordion *ngFor="let skill of other">
+    <app-accordion-item [title]="skill.title" [content]="skill.description"></app-accordion-item>
+  </app-accordion>
+
+
+</div>
 
 <app-footer></app-footer>

@@ -7,7 +7,7 @@
   <div [@rotate]="!hideContent? 'default': 'rotated'"><i class="fa-solid fa-angle-down"></i>
   </div>
 </div>
-<div [@collapseAccordion]="!hideContent? 'initial': 'final'">
+<div [@collapseAccordion]="!hideContent? 'start': 'end'">
   <div class="acc-body">
     {{content}}
       <ng-content></ng-content>

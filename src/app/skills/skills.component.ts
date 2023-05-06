@@ -1,28 +1,51 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { SkillsService } from '../skills.service';
+import { ISkill } from 'src/interfaces/ISkill';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss']
 })
-export class SkillsComponent implements OnInit {
+export class SkillsComponent  {
 
-  constructor() { }
 
-  skills = ['Angular', 'React', 'Vanilla JavaScript', 'Jest', 'Storybook', 'RxJS',
-  'TypeScript', 'NodeJS', 'Ruby', 'MaterialUI', 'AngularMaterial', 'RSpec', 'SQL', 'SCSS'];
+  @Input() frontend: ISkill[] = []
+  @Input() design: ISkill[] = [];
+  @Input() backend: ISkill[] = [];
+  @Input() other: ISkill[] = [];
+  @Input() title!: string;
+  @Input() description!: string;
 
-  lesserSkills = ['Java', 'Python', 'JUnit']
+  constructor(private skill: SkillsService){}
 
-  ngOnInit(): void {
+  ngOnInit() {
+   this.fetchFrontendSkills();
+   this.fetchDesignSkills();
+   this.fetchBackendSkills();
+   this.fetchOtherSkills();
   }
 
-  learnMoreSkills() {
-    console.log('Learn More Skills');
+  fetchFrontendSkills() {
+   this.frontend = this.skill.getFrontendSkills()
+   console.log(this.frontend)
   }
+  fetchDesignSkills() {
+    this.design = this.skill.getDesignSkills()
+   }
 
-  learnMoreLessSkills() {
-    console.log('Learn More Lesser Skills');
-  }
+   fetchBackendSkills() {
+    this.backend = this.skill.getBackendSkills()
+   }
+
+   fetchOtherSkills() {
+    this.other = this.skill.getOtherSkills()
+   }
+
+
+
+
+
+
 
 }
