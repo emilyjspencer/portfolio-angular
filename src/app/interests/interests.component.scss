@@ -253,12 +253,36 @@ h3 {
   margin-right: 50px;
 }
 
+.wellbeing-images {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  position: relative;
+  bottom: 55px;
+}
+
 .fitness {
   margin-left: 50px;
   margin-right: 50px;
 }
 
+.fitness-images {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  position: relative;
+  bottom: 55px;
+}
+
 .mental {
   margin-left: 50px;
   margin-right: 50px;
+}
+
+.mental-images {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  position: relative;
+  bottom: 55px;
 }
