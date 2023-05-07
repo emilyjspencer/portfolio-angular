@@ -98,7 +98,7 @@ export const PROJECTS: IProject[] = [
   image: "../../assets/images/guardianmain.png",
   link: "http://sable-notebook.surge.sh/",
   githubLink: "https://github.com/emilyjspencer/Guardian-News-React.git",
-  technologies: ""
+  technologies: "React, Axios, Guardian API"
 },
 {
   title: "Perfume",
@@ -107,7 +107,7 @@ export const PROJECTS: IProject[] = [
   image: "../../assets/images/paco.jpg",
   link: "",
   githubLink: "https://github.com/emilyjspencer/Perfume",
-  technologies: ""
+  technologies: "Java, JSP, Spring Boot"
 },
 
 
