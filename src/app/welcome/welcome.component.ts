@@ -1,7 +1,7 @@
 import { animate, style, transition, trigger } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
@@ -16,12 +16,18 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   ]
 })
 export class WelcomeComponent implements OnInit {
-  faCoffee = faCoffee
+
+
 
   constructor(private route: Router) { }
 
+  @ViewChild('github', { static: false })  github!: ElementRef;
+  @ViewChild('linkedin', { static: false })  linkedin!: ElementRef;
+
   state = false;
-  name = '';
+
+  link: string = ''
+  id: string = ''
 
   ngOnInit(): void {
 
@@ -33,12 +39,21 @@ export class WelcomeComponent implements OnInit {
       this.route.navigate(["/about"]);
       }, 4000)
    }
+;
+   visitSocialLink(link: string, id: string) {
+    console.log(this.github.nativeElement.getAttribute('class'))
+    console.log(id)
 
-   visitSocialLink() {
-    this.route.navigate([""]);
-    console.log('visitSocialLink was called')
+    if (this.github.nativeElement.getAttribute('class') === 'fab fa-github fa-xl') {
+    link = 'https://github.com/emilyjspencer'
+    window.location.href = link;
+
+    } else {
+      link = 'https://www.linkedin.com/in/emily-spencer-a407269b/'
+      window.location.href = link
+
+    }
    }
-
 
 
 }

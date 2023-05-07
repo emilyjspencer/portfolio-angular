@@ -91,6 +91,16 @@ export const PROJECTS: IProject[] = [
   githubLink: "https://github.com/emilyjspencer/Guardian-News-React.git",
   technologies: ""
 },
+{
+  title: "Perfume",
+  subtitle: "",
+  description: "A Perfume shop application built with Java and JSP",
+  image: "../../assets/images/no5.jpg",
+  link: "",
+  githubLink: "https://github.com/emilyjspencer/Perfume",
+  technologies: ""
+},
+
 
 
 

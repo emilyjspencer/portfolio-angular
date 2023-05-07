@@ -14,8 +14,12 @@ export class SkillsComponent  {
   @Input() design: ISkill[] = [];
   @Input() backend: ISkill[] = [];
   @Input() other: ISkill[] = [];
+  @Input() makers: ISkill[] = [];
   @Input() title!: string;
   @Input() description!: string[];
+
+  @Input() fdm: ISkill[] = [];
+  @Input() sheffield: ISkill[] = [];
 
   constructor(private skill: SkillsService){}
 
@@ -24,6 +28,9 @@ export class SkillsComponent  {
    this.fetchDesignSkills();
    this.fetchBackendSkills();
    this.fetchOtherSkills();
+   this.fetchMakersSkills();
+   this.fetchFdmSkills();
+   this.fetchSheffieldSkills()
   }
 
   fetchFrontendSkills() {
@@ -41,6 +48,17 @@ export class SkillsComponent  {
     this.other = this.skill.getOtherSkills()
    }
 
+   fetchMakersSkills() {
+    this.makers = this.skill.getMakersSkills();
+   }
+
+   fetchFdmSkills() {
+    this.fdm = this.skill.getFdmSkills();
+   }
+
+   fetchSheffieldSkills() {
+    this.sheffield = this.skill.getSheffieldSkills();
+   }
 
 
 

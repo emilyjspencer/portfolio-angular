@@ -1,7 +1,7 @@
 <app-nav></app-nav>
 <div class="accordion-container">
   <h3>Skills, Education and experience</h3>
-  <h4>I have learned and/or worked with the following technologies</h4>
+  <h5>My education and professional experience has seen me gain experience with a range of technologies:</h5>
 
   <app-accordion *ngFor="let skill of frontend">
     <app-accordion-item [title]="skill.title" [content]="skill.description"></app-accordion-item>
@@ -21,19 +21,32 @@
   </app-accordion>
 
   <h2>Education</h2>
-  <h3>Makers Academy</h3>
-  <i class="fa-brands fa-square-js"></i>
+  <h5 replaceCommaByDot>My education has been very broad. I studied Modern Languages, Maths and Biology at A Level, with an AS Level in
+    Economics.
+    I went on to study French, German, Spanish and Dutch at university.
+    At the end of 2019, I joined Makers Academy, a leading coding bootcamp where I gained exposure to Ruby, Rails and JavaScript, before joining the FDM programme in
+    January 2021, where I was exposed to more technologies still.
+  </h5>
 
-  <h3>FDM</h3>
+  <app-accordion *ngFor="let skill of makers">
+    <app-accordion-item [title]="skill.title" [content]="skill.description"></app-accordion-item>
+  </app-accordion>
 
-  <i class="fa-brands fa-react"></i>
-  <i class="fa-brands fa-java"></i>
-  <i class="fa-brands fa-python"></i>
-  <i class="fa-solid fa-database"></i>
+  <app-accordion *ngFor="let skill of fdm">
+    <app-accordion-item replaceCommaByDot [title]="skill.title" [content]="skill.description"></app-accordion-item>
+  </app-accordion>
+
+  <app-accordion *ngFor="let skill of sheffield ">
+    <app-accordion-item [title]="skill.title" [content]="skill.description"></app-accordion-item>
+  </app-accordion>
+
 
   <h2>Experience</h2>
-  <p>Software Development consultant</p>
-  <app-card></app-card>
+  <h5 replaceCommaByDot>I have been working as a software development consultant/contractor for FDM following
+    completion of my training in 2021. This has seen me work at two financial instituations: an investment bank
+    and an asset management firm. I worked as a backend (Java developer) at the former, and as an Angular developer at
+    the latter.
+  </h5>
 </div>
 
 <app-footer></app-footer>

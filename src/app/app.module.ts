@@ -20,8 +20,6 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { CardComponent } from './card/card.component';
 import { LinkDirective } from './link.directive';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faGhost, faGifts, faSmile } from '@fortawesome/free-solid-svg-icons';
 import { AccordionComponent } from './accordion/accordion.component';
 
 @NgModule({
@@ -55,11 +53,4 @@ import { AccordionComponent } from './accordion/accordion.component';
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {
-  constructor() {
-    library.add(faSmile);
-    library.add(faGifts);
-    library.add(faGhost)
-
-  }
- }
+export class AppModule {}
