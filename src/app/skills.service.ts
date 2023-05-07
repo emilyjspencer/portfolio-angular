@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BACKENDDEVELOPMENT, DESIGN, FDM, FRONTENDDEVELOPMENT, MAKERS, OTHER, SHEFFIELD } from './skills/skills';
+import { BACKENDDEVELOPMENT, DESIGN, FDM, FRONTENDDEVELOPMENT, MAKERS, OTHER } from './skills/skills';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +14,6 @@ export class SkillsService {
   other = OTHER;
   makers = MAKERS;
   fdm = FDM;
-  sheffield = SHEFFIELD;
 
 
   getFrontendSkills() {
@@ -39,9 +38,5 @@ export class SkillsService {
 
   getFdmSkills() {
     return this.fdm;
-  }
-
-  getSheffieldSkills() {
-    return this.sheffield;
   }
 }

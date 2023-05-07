@@ -34,7 +34,7 @@
   </app-accordion>
 
   <div class="education-container">
-    <h2>Education</h2>
+    <h3>Education</h3>
     <p class="education">
       My education has been very broad. I studied Modern Languages, Maths and
       Biology at A Level, with an AS Level in Economics. I went on to study
@@ -47,6 +47,7 @@
       2021, where I was exposed to more technologies still.
     </p>
   </div>
+
 
   <app-accordion *ngFor="let skill of makers">
     <app-accordion-item
@@ -63,15 +64,8 @@
     ></app-accordion-item>
   </app-accordion>
 
-  <app-accordion *ngFor="let skill of sheffield">
-    <app-accordion-item
-      [title]="skill.title"
-      [content]="skill.description"
-    ></app-accordion-item>
-  </app-accordion>
-
   <div class="experience-container">
-  <h2>Experience</h2>
+  <h3>Experience</h3>
   <p class="experience">
     I have been working as a software development consultant/contractor for FDM
     following completion of my training in 2021. This has seen me work at two

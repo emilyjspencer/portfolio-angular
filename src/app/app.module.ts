@@ -19,6 +19,7 @@ import { CardComponent } from './card/card.component';
 import { LinkDirective } from './link.directive';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AccordionComponent } from './accordion/accordion.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { AccordionComponent } from './accordion/accordion.component';
     CardComponent,
     LinkDirective,
     AccordionComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

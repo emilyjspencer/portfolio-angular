@@ -17,9 +17,8 @@ export class SkillsComponent  {
   @Input() makers: ISkill[] = [];
   @Input() title!: string;
   @Input() description!: string[];
-
   @Input() fdm: ISkill[] = [];
-  @Input() sheffield: ISkill[] = [];
+
 
   constructor(private skill: SkillsService){}
 
@@ -30,7 +29,6 @@ export class SkillsComponent  {
    this.fetchOtherSkills();
    this.fetchMakersSkills();
    this.fetchFdmSkills();
-   this.fetchSheffieldSkills()
   }
 
   fetchFrontendSkills() {
@@ -54,10 +52,6 @@ export class SkillsComponent  {
 
    fetchFdmSkills() {
     this.fdm = this.skill.getFdmSkills();
-   }
-
-   fetchSheffieldSkills() {
-    this.sheffield = this.skill.getSheffieldSkills();
    }
 
 

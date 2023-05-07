@@ -25,12 +25,10 @@ export const MAKERS = [
  ]
 
  export const FDM = [
-  {title: 'FDM', description: ['  Java', '  JDBC', '  JSP', '  Spring Boot', '  Python', '  SQL', '  React', 'Redux', 'Shell Scripting']}
+  {title: 'FDM', description: ['  Java', '  JDBC', '  JSP', '  Spring Boot', '  Python', '  SQL', '  React', '  Redux', '  Shell Scripting']}
 
  ]
 
- export const SHEFFIELD = [
-  {title: 'University of Sheffield', description: ['  French', '  German', '  Dutch', '  Spanish', '  French Studies', '  German - English translation', '  Nineteenth Century French Poetry', '  Modern German Drama', '  Songwriting', '  Feminism and Philosophy', '  The German Democratic Republic', '  Freud\'s Theory and Its Use in Literary and Cultural Studies']}
 
- ]
+
 
