@@ -1,11 +1,40 @@
 .accordion-container {
  padding: 40px;
+ padding-top: 0;
  margin-left: 160px;
 }
 
 h2, h3, h4, h5, h6, p{
   text-align: center;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-top: 40px;
+}
+
+.skills {
+  font-size: 16px;
+}
+
+.education {
+  font-size: 16px;
+}
+
+.experience {
+  font-size: 16px;
+}
+
+.experience-container {
+  padding-right: 70px;
+  padding-left: 70px;
+  margin-right: 150px;
+}
+
+.education-container {
+  padding-right: 70px;
+  padding-left: 70px;
+  margin-right: 150px;
+
+  .educationn-container.h5 {
+    font-size: 16px !important;
+    font-weight: 400px;
+  }
 }
 

@@ -2,7 +2,7 @@ import { ISkill } from "src/interfaces/ISkill"
 
 
 export const FRONTENDDEVELOPMENT: ISkill[] = [
- {title: 'Frontend', description: ['React  ', '  Angular' , '  Vanilla JavaScript  ', '  RxJS  ', '  GraphQL']}
+ {title: 'Frontend', description: ['React  ', '  Angular' , '  Vanilla JavaScript  ', '  RxJS  ', '  GraphQL', '   Cypress']}
 ]
 
 

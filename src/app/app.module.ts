@@ -6,8 +6,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SkillsComponent } from './skills/skills.component';
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InterestsDataService } from '../../api/data';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { InterestsComponent } from './interests/interests.component';
@@ -46,9 +44,6 @@ import { AccordionComponent } from './accordion/accordion.component';
     BrowserAnimationsModule,
     HttpClientModule,
     FontAwesomeModule,
-    HttpClientInMemoryWebApiModule.forRoot(
-      InterestsDataService, { dataEncapsulation: false }
-    ),
   ],
   providers: [],
   bootstrap: [AppComponent],

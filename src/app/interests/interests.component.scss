@@ -84,15 +84,16 @@ h3 {
   bottom: -400px;
 }
 
+h2 {
+  text-align: center;
+}
+
 
 .lang {
   background-color:  #e4d1d1;
 }
 
-.languages {
-  background-color:  #c7c0c0;
 
-}
 
 .languagesss {
   background-color:  #c7c0c0;
@@ -151,7 +152,19 @@ h3 {
   padding-right: 100px;
 }
 
+.mental {
+  margin-top: 100px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
 
+.fitness {
+  margin-top: 100px;
+}
+
+.technology {
+  margin-top: 100px;
+}
 .athenacircle {
   width: 320px;
   height: 320px;
@@ -213,6 +226,16 @@ h3 {
   padding: 15px;
 }
 
+.qwikcircle {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  margin: 10px;
+  box-sizing: border-box;
+  border: solid  #bdb3b3 20px;
+  padding: 15px;
+}
+
 .techtext {
   margin-left: 80px;
   margin-right: 80px;
@@ -236,6 +259,7 @@ h3 {
   display: flex;
   flex-direction: row;
 
+
 }
 
 .tech2 {
@@ -257,8 +281,6 @@ h3 {
   display: flex;
   flex-direction: row;
   margin: auto;
-  position: relative;
-  bottom: 55px;
 }
 
 .fitness {
@@ -270,8 +292,9 @@ h3 {
   display: flex;
   flex-direction: row;
   margin: auto;
-  position: relative;
-  bottom: 55px;
+  margin-left: 90px;
+  margin-right: 90px;
+
 }
 
 .mental {
@@ -283,6 +306,4 @@ h3 {
   display: flex;
   flex-direction: row;
   margin: auto;
-  position: relative;
-  bottom: 55px;
 }

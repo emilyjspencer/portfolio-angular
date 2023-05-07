@@ -15,23 +15,12 @@ import { Router } from '@angular/router';
     ])
   ]
 })
-export class WelcomeComponent implements OnInit {
-
-
+export class WelcomeComponent {
 
   constructor(private route: Router) { }
 
-  @ViewChild('github', { static: false })  github!: ElementRef;
-  @ViewChild('linkedin', { static: false })  linkedin!: ElementRef;
-
   state = false;
-
-  link: string = ''
-  id: string = ''
-
-  ngOnInit(): void {
-
-  }
+  link = '';
 
   zoomIn() {
     this.state = true;
@@ -39,21 +28,17 @@ export class WelcomeComponent implements OnInit {
       this.route.navigate(["/about"]);
       }, 4000)
    }
-;
-   visitSocialLink(link: string, id: string) {
-    console.log(this.github.nativeElement.getAttribute('class'))
-    console.log(id)
 
-    if (this.github.nativeElement.getAttribute('class') === 'fab fa-github fa-xl') {
-    link = 'https://github.com/emilyjspencer'
-    window.location.href = link;
+  visitGithub() {
+    window.location.href = 'https://github.com/emilyjspencer'
+  }
 
-    } else {
-      link = 'https://www.linkedin.com/in/emily-spencer-a407269b/'
-      window.location.href = link
+  visitLinkedin() {
+    window.location.href= 'https://uk.linkedin.com/in/emily-spencer-a407269b'
+  }
 
-    }
-   }
 
 
 }
+
+

@@ -1,52 +1,85 @@
 <app-nav></app-nav>
+<h3>Skills, Education and experience</h3>
+<p class="skills">
+  My education and professional experience has seen me gain experience with a
+  range of technologies:
+</p>
 <div class="accordion-container">
-  <h3>Skills, Education and experience</h3>
-  <h5>My education and professional experience has seen me gain experience with a range of technologies:</h5>
-
   <app-accordion *ngFor="let skill of frontend">
-    <app-accordion-item [title]="skill.title" [content]="skill.description"></app-accordion-item>
+    <app-accordion-item
+      [title]="skill.title"
+      [content]="skill.description"
+    ></app-accordion-item>
   </app-accordion>
 
-
   <app-accordion *ngFor="let skill of design">
-    <app-accordion-item [title]="skill.title" [content]="skill.description"></app-accordion-item>
+    <app-accordion-item
+      [title]="skill.title"
+      [content]="skill.description"
+    ></app-accordion-item>
   </app-accordion>
 
   <app-accordion *ngFor="let skill of backend">
-    <app-accordion-item [title]="skill.title" [content]="skill.description"></app-accordion-item>
+    <app-accordion-item
+      [title]="skill.title"
+      [content]="skill.description"
+    ></app-accordion-item>
   </app-accordion>
 
   <app-accordion *ngFor="let skill of other">
-    <app-accordion-item [title]="skill.title" [content]="skill.description"></app-accordion-item>
+    <app-accordion-item
+      [title]="skill.title"
+      [content]="skill.description"
+    ></app-accordion-item>
   </app-accordion>
 
-  <h2>Education</h2>
-  <h5 replaceCommaByDot>My education has been very broad. I studied Modern Languages, Maths and Biology at A Level, with an AS Level in
-    Economics.
-    I went on to study French, German, Spanish and Dutch at university.
-    At the end of 2019, I joined Makers Academy, a leading coding bootcamp where I gained exposure to Ruby, Rails and JavaScript, before joining the FDM programme in
-    January 2021, where I was exposed to more technologies still.
-  </h5>
+  <div class="education-container">
+    <h2>Education</h2>
+    <p class="education">
+      My education has been very broad. I studied Modern Languages, Maths and
+      Biology at A Level, with an AS Level in Economics. I went on to study
+      French, German, Spanish and Dutch at university.
+      <br>
+      <br>
+       At the end of 2019, I
+      joined Makers Academy, a leading coding bootcamp where I gained exposure
+      to Ruby, Rails and JavaScript, before joining the FDM programme in January
+      2021, where I was exposed to more technologies still.
+    </p>
+  </div>
 
   <app-accordion *ngFor="let skill of makers">
-    <app-accordion-item [title]="skill.title" [content]="skill.description"></app-accordion-item>
+    <app-accordion-item
+      [title]="skill.title"
+      [content]="skill.description"
+    ></app-accordion-item>
   </app-accordion>
 
   <app-accordion *ngFor="let skill of fdm">
-    <app-accordion-item replaceCommaByDot [title]="skill.title" [content]="skill.description"></app-accordion-item>
+    <app-accordion-item
+      replaceCommaByDot
+      [title]="skill.title"
+      [content]="skill.description"
+    ></app-accordion-item>
   </app-accordion>
 
-  <app-accordion *ngFor="let skill of sheffield ">
-    <app-accordion-item [title]="skill.title" [content]="skill.description"></app-accordion-item>
+  <app-accordion *ngFor="let skill of sheffield">
+    <app-accordion-item
+      [title]="skill.title"
+      [content]="skill.description"
+    ></app-accordion-item>
   </app-accordion>
 
-
+  <div class="experience-container">
   <h2>Experience</h2>
-  <h5 replaceCommaByDot>I have been working as a software development consultant/contractor for FDM following
-    completion of my training in 2021. This has seen me work at two financial instituations: an investment bank
-    and an asset management firm. I worked as a backend (Java developer) at the former, and as an Angular developer at
-    the latter.
-  </h5>
+  <p class="experience">
+    I have been working as a software development consultant/contractor for FDM
+    following completion of my training in 2021. This has seen me work at two
+    financial instituations: an investment bank and an asset management firm. I
+    worked as a backend (Java developer) at the former, and as an Angular
+    developer at the latter.
+  </p>
+  </div>
 </div>
 
 <app-footer></app-footer>

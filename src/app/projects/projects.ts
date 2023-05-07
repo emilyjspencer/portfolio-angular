@@ -50,9 +50,9 @@ export const PROJECTS: IProject[] = [
   title: "Wellbeing (WIP)",
   subtitle: "",
   description: "A wellbeing app featuring animated breathing exercise, a fitness tracker, mood tracker, a vision board , gratitude journal, affirmations",
-  image: "../../assets/images/ocean.jpg",
-  link: "www.google.com",
-  githubLink: "",
+  image: "../../assets/images/wellbeing.jpg",
+  link: "",
+  githubLink: "https://github.com/emilyjspencer/wellbeing-full.git",
   technologies: "Angular, ChartJS, AWS Lambda, RxJS"
 },
 {
@@ -68,10 +68,10 @@ export const PROJECTS: IProject[] = [
   title: "Medication Tracker",
   subtitle: "",
   description: "Keep track of your daily medication. Daily reminders. Receive warnings when stock is low",
-  image: "../../assets/images/ocean.jpg",
-  link: "www.google.com",
-  githubLink: "",
-  technologies: "Angular"
+  image: "../../assets/images/workinprogress.jpg",
+  link: "",
+  githubLink: "https://github.com/emilyjspencer/medication-tracker.git",
+  technologies: "Angular, Ionic"
 },
 {
   title: "Presents Planner",
