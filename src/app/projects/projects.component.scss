@@ -9,6 +9,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  background-color: #d6cfcf;
 }
 
 
@@ -22,7 +23,8 @@ ul {
   padding: 24px;
 }
 
-h1 {
+h1, h2, h3 {
   text-align: center;
   font-family: Montserrat;
+  margin-bottom: 28px;
 }

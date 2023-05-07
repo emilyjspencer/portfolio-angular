@@ -59,7 +59,7 @@ export const PROJECTS: IProject[] = [
   title: "Acebook",
   subtitle: "",
   description: "A Facebook clone built using the Rails framework",
-  image: "../../assets/images/ocean.jpg",
+  image: "../../assets/images/404.jpg",
   link: "",
   githubLink: "https://github.com/emilyjspencer/acebook-inSANE",
   technologies: "Rails, JavaScript"
@@ -83,10 +83,19 @@ export const PROJECTS: IProject[] = [
   technologies: "React, Jasmine, Enzyme"
 },
 {
+  title: "Finbot",
+  subtitle: "",
+  description: "A chat bot designed with young people in mind to advise them on matters of personal finance. Makers final project",
+  image: "../../assets/images/ubb.png",
+  link: "https://github.com/nikimanoledaki/finbot-api",
+  githubLink: "https://github.com/nikimanoledaki/finbot",
+  technologies: "Python, Django, React, NLTK, TensorFlow, TFLearn, UnitTest, Cypress"
+},
+{
   title: "Guardian News",
   subtitle: "",
   description: "A React application which calls on the Guardian API",
-  image: "../../assets/images/guardian.png",
+  image: "../../assets/images/guardianmain.png",
   link: "http://sable-notebook.surge.sh/",
   githubLink: "https://github.com/emilyjspencer/Guardian-News-React.git",
   technologies: ""
@@ -95,7 +104,7 @@ export const PROJECTS: IProject[] = [
   title: "Perfume",
   subtitle: "",
   description: "A Perfume shop application built with Java and JSP",
-  image: "../../assets/images/no5.jpg",
+  image: "../../assets/images/paco.jpg",
   link: "",
   githubLink: "https://github.com/emilyjspencer/Perfume",
   technologies: ""

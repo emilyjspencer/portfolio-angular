@@ -2,7 +2,7 @@ import { ISkill } from "src/interfaces/ISkill"
 
 
 export const FRONTENDDEVELOPMENT: ISkill[] = [
- {title: 'Frontend', description: ['React  ', '  Angular' , '  Vanilla JavaScript  ', '  RxJS  ', '  GraphQL', '   Cypress']}
+ {title: 'Frontend', description: ['React  ', '  Angular' , '  Vanilla JavaScript  ', '  RxJS  ', '  GraphQL', '   Cypress', '  Jest']}
 ]
 
 
@@ -11,7 +11,7 @@ export const DESIGN = [
 ]
 
 export const BACKENDDEVELOPMENT = [
-  {title: 'Backend', description: ['  Node' , ' Ruby  ' , 'Rails  ' , '  Java  ', '  Python  ']}
+  {title: 'Backend', description: ['  Node' , ' Ruby  ' , 'Rails  ' , '  Java  ', '  Python  ', '  JUnit',  '  RSpec' ]}
 ]
 
 export const OTHER = [
@@ -25,7 +25,7 @@ export const MAKERS = [
  ]
 
  export const FDM = [
-  {title: 'FDM', description: ['  Java', '  JDBC', '  JSP', '  Spring Boot', '  Python', '  SQL', '  React', '  Redux', '  Shell Scripting']}
+  {title: 'FDM', description: ['  Java', '  JDBC', '  JSP', '  JUnit' ,'  Spring Boot', '  Python', '  SQL', '  React', '  Redux', '  Shell Scripting']}
 
  ]
 
