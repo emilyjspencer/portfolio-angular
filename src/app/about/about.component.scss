@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  width: 600px;
+  margin-left: 70px;
+}
+
+#emily {
+  width: 600px;
+  height: 620px;
+}
+
+
+p {
+  text-align: center;
+  font-size: 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -100px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.text {
+  margin-right: 40px;
+  margin-top: 20px;
+}

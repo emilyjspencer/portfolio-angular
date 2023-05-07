@@ -6,24 +6,27 @@
 }
 
 .accordion-title {
-  text-transform: uppercase;
   font-weight: bold
 }
 
+.accordion-header {
+  height: 40px;
+}
 .accordion-container {
   transition: height 0.8s cubic-bezier(1, 0, 0.41, 1.01);
   background-color: #d1c7c7;
+
 }
 
 .accordion-body {
   display: none;
-  opacity: 1;
-  transition: opacity .9s;
+  opacity: 0.6;
+  transition: opacity .29s;
 }
 
 .accordion-body.active {
   display: block;
-  animation: fadeIn .8s;
+  animation: fadeIn .9s;
   -webkit-animation: fadeIn .8s;
 }
 
