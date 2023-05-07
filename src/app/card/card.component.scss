@@ -10,7 +10,12 @@ a {
   padding-bottom: 20px;
 }
 
+.card-container:hover {
+  opacity: 1;
+}
+
 .card-container {
+  opacity: 0.5;
   width: sizes.$portfolio-size-320;
   // background-color: colors.$portfolio-color-white;
   background-color: #f7f7f7;
