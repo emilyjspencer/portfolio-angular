@@ -16,7 +16,6 @@ import { AccordionItemComponent } from './accordion-item/accordion-item.componen
 import { ErrorComponent } from './error/error.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { CardComponent } from './card/card.component';
-import { LinkDirective } from './link.directive';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AccordionComponent } from './accordion/accordion.component';
 import { ContactComponent } from './contact/contact.component';
@@ -36,7 +35,6 @@ import { ContactComponent } from './contact/contact.component';
     ErrorComponent,
     WelcomeComponent,
     CardComponent,
-    LinkDirective,
     AccordionComponent,
     ContactComponent,
   ],
