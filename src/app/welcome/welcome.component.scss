@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
+@use '../../sizes.scss';
+
 .logo {
- padding-top: 40px;
- padding-bottom: 20px;
+ padding-top: sizes.$portfolio-size-40;
+ padding-bottom: sizes.$portfolio-size-20;
 }
 
 .welcomeContainer {
@@ -20,25 +21,24 @@
 }
 
 h2 {
-  margin-top: -80px;
+  margin-top: calc(-1 * sizes.$portfolio-size-80);
   font-style: italic;
   font-weight: 400;
   font-family: Montserrat;
 }
 
 .fab {
-  width: 200px;
-  height: 200px;
+  width: sizes.$portfolio-size-200;
+  height: sizes.$portfolio-size-200;
 }
 
 .social {
-  margin-top: -90px;
-  margin-left: 20px;
-
+  margin-top: calc(-1 * sizes.$portfolio-size-90);
+  margin-left: sizes.$portfolio-size-20;
 }
 
 i {
-  width: 200px;
+  width: sizes.$portfolio-size-200;
 }
 
 

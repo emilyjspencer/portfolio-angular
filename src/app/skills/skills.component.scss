@@ -1,7 +1,9 @@
+@use '../../sizes.scss';
+
 .accordion-container {
-  padding: 40px;
+  padding: sizes.$portfolio-size-40;
   padding-top: 0;
-  margin-left: 160px;
+  margin-left: sizes.$portfolio-size-160;
 }
 
 h2,
@@ -11,47 +13,47 @@ h5,
 h6,
 p {
   text-align: center;
-  margin-top: 40px;
+  margin-top: sizes.$portfolio-size-40;
 }
 
 .skills {
-  font-size: 16px;
-  margin-top: -140px;
+  font-size: sizes.$portfolio-size-16;
+  margin-top: calc(-1 * sizes.$portfolio-size-140);
 }
 
 .education {
-  font-size: 16px;
+  font-size: sizes.$portfolio-size-16;
 }
 
 .experience {
-  font-size: 16px;
+  font-size: sizes.$portfolio-size-16;
 }
 
 .experience-container {
-  padding-right: 70px;
-  padding-left: 40px;
-  margin-right: 150px;
+  padding-right: sizes.$portfolio-size-70;
+  padding-left: sizes.$portfolio-size-40;
+  margin-right: sizes.$portfolio-size-150;
 }
 
 .education-container {
-  padding-right: 70px;
-  padding-left: 20px;
-  margin-right: 150px;
+  padding-right: sizes.$portfolio-size-70;
+  padding-left: sizes.$portfolio-size-20;
+  margin-right: sizes.$portfolio-size-150;
 
   .education-container.h5 {
-    font-size: 16px !important;
-    font-weight: 400px;
+    font-size: sizes.$portfolio-size-16;
+    font-weight: sizes.$portfolio-size-400;
   }
 }
 
 img {
-  margin-top: -110px;
+  margin-top: calc(-1 * sizes.$portfolio-size-110);
   margin-left: 0;
 }
 
 #london-bottom {
-  margin-top: -210px;
-  margin-left: -240px;
+  margin-top: calc(-1 * sizes.$portfolio-size-210);
+  margin-left: calc(-1 * sizes.$portfolio-size-240);
 }
 
 #london-top {

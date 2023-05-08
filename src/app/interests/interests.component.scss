@@ -5,42 +5,42 @@ h2 {
 }
 
 .dance {
-  width: 350px;
-  height: 350px;
+  width: sizes.$portfolio-size-350;
+  height: sizes.$portfolio-size-350;;
   display: flex;
   flex-direction: row;
-  padding: 15px;
+  padding: sizes.$portfolio-size-15;
   border-radius: 50%;
-  margin: 10px;
+  margin: sizes.$portfolio-size-10;
   box-sizing: border-box;
   background-color: rgb(204, 201, 201);
-  border: solid  #bdb3b3 20px;
+  border: solid  #bdb3b3 sizes.$portfolio-size-20;
 }
 
 .physical {
-  width: 300px;
-  height: 300px;
+  width: sizes.$portfolio-size-300;
+  height: sizes.$portfolio-size-300;
   display: flex;
   flex-direction: row;
-  padding: 10px;
+  padding: sizes.$portfolio-size-10;
   box-sizing: border-box;
   background-color: rgb(204, 201, 201);
   border-radius: 50%;
-  margin: 10px;
-  border: solid  #bdb3b3 20px;
+  margin: sizes.$portfolio-size-10;
+  border: solid  #bdb3b3 sizes.$portfolio-size-20;
 }
 
 .piano {
-  width: 300px;
-  height: 300px;
+  width: sizes.$portfolio-size-300;
+  height: sizes.$portfolio-size-300;
   display: flex;
   flex-direction: row;
-  padding: 10px;
+  padding: sizes.$portfolio-size-10;
   box-sizing: border-box;
   background-color: rgb(204, 201, 201);
   border-radius: 50%;
-  margin: 10px;
-  border: solid  #bdb3b3 20px;
+  margin: sizes.$portfolio-size-10;
+  border: solid  #bdb3b3 sizes.$portfolio-size-20;
 }
 
 .performingarts {
@@ -48,17 +48,16 @@ h2 {
   word-wrap: normal;
   flex-direction: column;
   background-color: #d1c7c7;
-  height: 800px;
-  padding-right: 100px;
-  padding-left: 100px;
-
+  height: sizes.$portfolio-size-800;
+  padding-right: sizes.$portfolio-size-100;
+  padding-left: sizes.$portfolio-size-100;
 }
 
 .performingtext {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: sizes.$portfolio-size-50;
+  margin-right: sizes.$portfolio-size-50;
   position: relative;
-  bottom: 110px;
+  bottom: sizes.$portfolio-size-110;
 }
 
 .performingimages {
@@ -66,20 +65,20 @@ h2 {
   flex-direction: row;
   margin: auto;
   position: relative;
-  bottom: 55px;
+  bottom: sizes.$portfolio-size-55;
 }
 
 .performingtitle {
- padding: 10px;
+ padding: sizes.$portfolio-size-10;
  position: relative;
- top: 10px;
+ top: sizes.$portfolio-size-10;
  margin: auto;
  background-color: #d1c7c7;
 }
 
 h3 {
   position: relative;
-  bottom: -400px;
+  bottom: calc(-1 * sizes.$portfolio-size-400);
 }
 
 h2 {
@@ -96,70 +95,70 @@ h2 {
 .languagesss {
   background-color:  #c7c0c0;
   position: relative;
-  bottom: 250px;
-  left: 150px;
+  bottom: sizes.$portfolio-size-250;
+  left: sizes.$portfolio-size-150;
 }
 
 .langtext {
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: sizes.$portfolio-size-80;
+  margin-right: sizes.$portfolio-size-80
 }
 
 .langtext2 {
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: sizes.$portfolio-size-80;
+  margin-right: sizes.$portfolio-size-80;
 }
 
 .grad {
   background-color:  rgb(197, 193, 193);
-  height: 30px;
+  height: sizes.$portfolio-size-30;
 }
 
 .grad2 {
   background-color:  rgb(235, 227, 227);
-  height: 30px;
+  height: sizes.$portfolio-size-30;
 }
 
 .grad3 {
   background-color:  rgb(229, 226, 226);
-  height: 30px;
+  height: sizes.$portfolio-size-30;
 }
 
 .grad4 {
   background-color:  rgb(235, 231, 231);
-  height: 30px;
+  height: sizes.$portfolio-size-30;
 }
 
 .grad5 {
   background-color:  rgb(240, 234, 234);
-  height: 30px;
+  height: sizes.$portfolio-size-30;
 }
 
 .grad6 {
   background-color:  rgb(243, 237, 237);
-  height: 30px;
+  height: sizes.$portfolio-size-30;
 }
 
 .grad7 {
   background-color:  rgb(248, 244, 244);
-  height: 30px;
+  height: sizes.$portfolio-size-30;
 }
 
 .wellbeing {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: sizes.$portfolio-size-100;
+  padding-right: sizes.$portfolio-size-100;
 }
 
 .mental {
-  margin-top: 100px;
-  padding-right: 100px;
-  padding-left: 100px;
+  margin-top: sizes.$portfolio-size-100;
+  padding-right: sizes.$portfolio-size-100;
+  padding-left: sizes.$portfolio-size-100;
 }
 
 .fitness {
-  margin-top: 100px;
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-top: sizes.$portfolio-size-100;
+  margin-right: sizes.$portfolio-size-200;
+  margin-left: sizes.$portfolio-size-200;
 }
 
 p {
@@ -167,103 +166,101 @@ p {
 }
 
 .technology {
-  margin-top: 100px;
+  margin-top: sizes.$portfolio-size-100;
 }
 .athenacircle {
-  width: 320px;
-  height: 320px;
+  width: sizes.$portfolio-size-320;
+  height: sizes.$portfolio-size-320;
   border-radius: 50%;
-  margin: 10px;
+  margin: sizes.$portfolio-size-10;
   box-sizing: border-box;
-  border: solid  #bdb3b3 20px;
-  padding: 15px;
+  border: solid  #bdb3b3 sizes.$portfolio-size-20;
+  padding: sizes.$portfolio-size-15;
 }
 
 .googlecircle {
-  width: 320px;
-  height: 320px;
+  width: sizes.$portfolio-size-320;
+  height: sizes.$portfolio-size-320;
   border-radius: 50%;
-  margin: 10px;
+  margin: sizes.$portfolio-size-10;
   box-sizing: border-box;
-  border: solid  #bdb3b3 20px;
-  padding: 15px;
+  border: solid  #bdb3b3 sizes.$portfolio-size-20;
+  padding: sizes.$portfolio-size-15;
 }
 
 .railscircle {
-  width: 320px;
-  height: 320px;
+  width: sizes.$portfolio-size-320;
+  height: sizes.$portfolio-size-320;
   border-radius: 50%;
-  margin: 10px;
+  margin: sizes.$portfolio-size-10;
   box-sizing: border-box;
-  border: solid  #bdb3b3 20px;
-  padding: 15px;
+  border: solid  #bdb3b3 sizes.$portfolio-size-20;
+  padding: sizes.$portfolio-size-15;
 }
 
 
 .nodecircle {
-  width: 320px;
-  height: 320px;
+  width: sizes.$portfolio-size-320;
+  height: sizes.$portfolio-size-320;
   border-radius: 50%;
-  margin: 10px;
+  margin: sizes.$portfolio-size-10;
   box-sizing: border-box;
-  border: solid  #bdb3b3 20px;
-  padding: 15px;
+  border: solid  #bdb3b3 sizes.$portfolio-size-20;
+  padding: sizes.$portfolio-size-15;
 }
 
 .javacircle {
-  width: 320px;
-  height: 320px;
+  width: sizes.$portfolio-size-320;
+  height: sizes.$portfolio-size-320;
   border-radius: 50%;
-  margin: 10px;
+  margin: sizes.$portfolio-size-10;
   box-sizing: border-box;
-  border: solid  #bdb3b3 20px;
-  padding: 15px;
+  border: solid  #bdb3b3 sizes.$portfolio-size-20;
+  padding: sizes.$portfolio-size-15;
 }
 
 .twittercircle {
-  width: 320px;
-  height: 320px;
+  width: sizes.$portfolio-size-320;
+  height: sizes.$portfolio-size-320;
   border-radius: 50%;
-  margin: 10px;
+  margin: sizes.$portfolio-size-10;
   box-sizing: border-box;
-  border: solid  #bdb3b3 20px;
-  padding: 15px;
+  border: solid  #bdb3b3 sizes.$portfolio-size-20;
+  padding: sizes.$portfolio-size-15;
 }
 
 .qwikcircle {
-  width: 320px;
-  height: 320px;
+  width: sizes.$portfolio-size-320;
+  height: sizes.$portfolio-size-320;
   border-radius: 50%;
-  margin: 10px;
+  margin: sizes.$portfolio-size-10;
   box-sizing: border-box;
-  border: solid  #bdb3b3 20px;
-  padding: 15px;
+  border: solid  #bdb3b3 sizes.$portfolio-size-20;
+  padding: sizes.$portfolio-size-15;
 }
 
 .techtext {
-  margin-left: 80px;
-  margin-right: 80px;
-  padding: 20px;
+  margin-left: sizes.$portfolio-size-80;
+  margin-right: sizes.$portfolio-size-80;
+  padding: sizes.$portfolio-size-20;
 }
 
 .techtitle {
   position: relative;
-  bottom: 250px;
-  left: 170px;
+  bottom: sizes.$portfolio-size-250;
+  left: sizes.$portfolio-size-170;
 }
 
 .techimages {
   display: flex;
   flex-direction: column;
   position: relative;
-  left: 120px;
+  left: sizes.$portfolio-size-120;
 }
 
 .tech {
   display: flex;
   flex-direction: row;
-
-
 }
 
 .tech2 {
@@ -273,12 +270,12 @@ p {
 
 .techie {
   background-color: #d1c7c7;
-  height: 1050px;
+  height: sizes.$portfolio-size-1050;
 }
 
 .wellbeing {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: sizes.$portfolio-size-50;
+  margin-right: sizes.$portfolio-size-50;
 }
 
 .wellbeing-images {
@@ -288,22 +285,22 @@ p {
 }
 
 .fitness {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: sizes.$portfolio-size-50;
+  margin-right: sizes.$portfolio-size-50;
 }
 
 .fitness-images {
   display: flex;
   flex-direction: row;
   margin: auto;
-  margin-left: 90px;
-  margin-right: 90px;
+  margin-left: sizes.$portfolio-size-90;
+  margin-right: sizes.$portfolio-size-90;
 
 }
 
 .mental {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: sizes.$portfolio-size-50;
+  margin-right: sizes.$portfolio-size-50;
 }
 
 .mental-images {
