@@ -1,12 +1,14 @@
+@use '../../sizes.scss';
+
 div {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 2px 3px rgba(0,0,0,0.24);
-  font-size: 16px;
-  padding: 20px;
+  font-size: sizes.$portfolio-size-16;
+  padding: sizes.$portfolio-size-20;
   color: #313131;
-  border-radius: 5px;
+  border-radius: sizes.$portfolio-size-5;
   width: 80%;
 }
 
 :host {
-  margin-left: 40px;
+  margin-left: sizes.$portfolio-size-40;
 }
