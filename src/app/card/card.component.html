@@ -1,18 +1,20 @@
 <div class="card-container">
   <div class="card-header">
     <div class="header-image"></div>
-    <div class="card-title">{{title}}</div>
-    <div class="card-content">{{subtitle}}</div>
+    <div class="card-title">{{ title }}</div>
+    <div class="card-content">{{ subtitle }}</div>
   </div>
-  <img src="{{image}}" alt="photo of project">
+  <img src="{{ image }}" alt="photo of project" />
   <div class="card-content">
     <p>
-      {{description}}
+      {{ description }}
     </p>
-    <p>Technologies used: {{technologies}}</p>
-    <a href="{{link}}">Click for deployed link:</a>
-    <br>
-    <br>
-    <a href="{{githubLink}}">Link to GitHub</a>
-
+    <p>Technologies used: {{ technologies }}</p>
+    <div *ngIf="link">
+      <a href="{{ link }}">Click for deployed link:</a>
+    </div>
+    <br />
+    <br />
+    <a href="{{ githubLink }}">Link to GitHub</a>
+  </div>
 </div>

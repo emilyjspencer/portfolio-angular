@@ -15,7 +15,7 @@ export const PROJECTS: IProject[] = [
   subtitle: "",
   description: "A Sinatra/postgresql application designed to mimic a simple version of the popular microblogging site - Twitter",
   image: "../../assets/images/chitter.png",
-  link: "www.google.com",
+  link: "",
   githubLink: "https://github.com/emilyjspencer/chitter-challenge",
   technologies: "Ruby, Sinatra, Postgres"
 },
@@ -45,6 +45,15 @@ export const PROJECTS: IProject[] = [
   link: "",
   githubLink: "https://github.com/emilyjspencer/Portfolio-Emily",
   technologies: "React"
+},
+{
+  title: "Portfolio (Angular)",
+  subtitle: "",
+  description: "Portfolio site I built using Angular",
+  image: "../../assets/images/2.png",
+  link: "",
+  githubLink: "https://github.com/emilyjspencer/portfolio-angular.git",
+  technologies: "Angular"
 },
 {
   title: "Wellbeing (WIP)",
@@ -108,6 +117,15 @@ export const PROJECTS: IProject[] = [
   link: "",
   githubLink: "https://github.com/emilyjspencer/Perfume",
   technologies: "Java, JSP, Spring Boot"
+},
+{
+  title: "Bookmarks",
+  subtitle: "",
+  description: "A Bookmarks manager - a full-stack application using a database",
+  image: "../../assets/images/bookmarks.png",
+  link: "",
+  githubLink: "https://github.com/emilyjspencer/Bookmarks.git",
+  technologies: "Ruby, Sinatra, SQL, PostgreSQL"
 },
 
 
