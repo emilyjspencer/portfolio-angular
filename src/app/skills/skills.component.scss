@@ -14,6 +14,7 @@ h6,
 p {
   text-align: center;
   margin-top: sizes.$portfolio-size-40;
+  margin-bottom: sizes.$portfolio-size-20;
 }
 
 .skills {
@@ -49,6 +50,7 @@ p {
 img {
   margin-top: calc(-1 * sizes.$portfolio-size-110);
   margin-left: 0;
+  opacity: 0.5;
 }
 
 #london-bottom {

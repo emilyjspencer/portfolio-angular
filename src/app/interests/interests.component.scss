@@ -1,4 +1,5 @@
 @use '../../sizes.scss';
+@use '../../colors.scss';
 
 h2 {
   text-align: center;
@@ -13,8 +14,8 @@ h2 {
   border-radius: 50%;
   margin: sizes.$portfolio-size-10;
   box-sizing: border-box;
-  background-color: rgb(204, 201, 201);
-  border: solid  #bdb3b3 sizes.$portfolio-size-20;
+  background-color: colors.$portfolio-color-white-grey;
+  border: solid  colors.$portfolio-color-grey sizes.$portfolio-size-20;
 }
 
 .physical {
@@ -24,10 +25,10 @@ h2 {
   flex-direction: row;
   padding: sizes.$portfolio-size-10;
   box-sizing: border-box;
-  background-color: rgb(204, 201, 201);
+  background-color: colors.$portfolio-color-white-grey;
   border-radius: 50%;
   margin: sizes.$portfolio-size-10;
-  border: solid  #bdb3b3 sizes.$portfolio-size-20;
+  border: solid  colors.$portfolio-color-grey sizes.$portfolio-size-20;
 }
 
 .piano {
@@ -37,30 +38,30 @@ h2 {
   flex-direction: row;
   padding: sizes.$portfolio-size-10;
   box-sizing: border-box;
-  background-color: rgb(204, 201, 201);
+  background-color: colors.$portfolio-color-white-grey;
   border-radius: 50%;
   margin: sizes.$portfolio-size-10;
-  border: solid  #bdb3b3 sizes.$portfolio-size-20;
+  border: solid  colors.$portfolio-color-grey sizes.$portfolio-size-20;
 }
 
-.performingarts {
+.performingarts-container {
   display: flex;
   word-wrap: normal;
   flex-direction: column;
-  background-color: #d1c7c7;
+  background-color: colors.$portfolio-color-grey-white;
   height: sizes.$portfolio-size-800;
   padding-right: sizes.$portfolio-size-100;
   padding-left: sizes.$portfolio-size-100;
 }
 
-.performingtext {
+.performingarts-text {
   margin-left: sizes.$portfolio-size-50;
   margin-right: sizes.$portfolio-size-50;
   position: relative;
   bottom: sizes.$portfolio-size-110;
 }
 
-.performingimages {
+.performingarts-images {
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -68,12 +69,12 @@ h2 {
   bottom: sizes.$portfolio-size-55;
 }
 
-.performingtitle {
+.performingarts-title {
  padding: sizes.$portfolio-size-10;
  position: relative;
  top: sizes.$portfolio-size-10;
  margin: auto;
- background-color: #d1c7c7;
+ background-color: colors.$portfolio-color-grey-white;
 }
 
 h3 {
@@ -86,67 +87,27 @@ h2 {
 }
 
 
-.lang {
-  background-color:  #e4d1d1;
+.languages-title {
+  padding-top: sizes.$portfolio-size-40;
 }
 
-
-
-.languagesss {
-  background-color:  #c7c0c0;
-  position: relative;
-  bottom: sizes.$portfolio-size-250;
-  left: sizes.$portfolio-size-150;
-}
-
-.langtext {
+.languages-text {
   margin-left: sizes.$portfolio-size-80;
   margin-right: sizes.$portfolio-size-80
 }
 
-.langtext2 {
+.languages-text2 {
   margin-left: sizes.$portfolio-size-80;
   margin-right: sizes.$portfolio-size-80;
 }
 
-.grad {
-  background-color:  rgb(197, 193, 193);
-  height: sizes.$portfolio-size-30;
-}
-
-.grad2 {
-  background-color:  rgb(235, 227, 227);
-  height: sizes.$portfolio-size-30;
-}
-
-.grad3 {
-  background-color:  rgb(229, 226, 226);
-  height: sizes.$portfolio-size-30;
-}
-
-.grad4 {
-  background-color:  rgb(235, 231, 231);
-  height: sizes.$portfolio-size-30;
-}
-
-.grad5 {
-  background-color:  rgb(240, 234, 234);
-  height: sizes.$portfolio-size-30;
-}
-
-.grad6 {
-  background-color:  rgb(243, 237, 237);
-  height: sizes.$portfolio-size-30;
-}
-
-.grad7 {
-  background-color:  rgb(248, 244, 244);
-  height: sizes.$portfolio-size-30;
-}
-
-.wellbeing {
+.wellbeing-container {
   padding-left: sizes.$portfolio-size-100;
   padding-right: sizes.$portfolio-size-100;
+}
+
+.wellbeing-text {
+ margin-top: sizes.$portfolio-size-40;
 }
 
 .mental {
@@ -155,8 +116,7 @@ h2 {
   padding-left: sizes.$portfolio-size-100;
 }
 
-.fitness {
-  margin-top: sizes.$portfolio-size-100;
+.fitness-container {
   margin-right: sizes.$portfolio-size-200;
   margin-left: sizes.$portfolio-size-200;
 }
@@ -165,8 +125,8 @@ p {
   text-align: center;
 }
 
-.technology {
-  margin-top: sizes.$portfolio-size-100;
+.technology-container {
+  margin-top: sizes.$portfolio-size-50;
 }
 .athenacircle {
   width: sizes.$portfolio-size-320;
@@ -174,7 +134,7 @@ p {
   border-radius: 50%;
   margin: sizes.$portfolio-size-10;
   box-sizing: border-box;
-  border: solid  #bdb3b3 sizes.$portfolio-size-20;
+  border: solid  colors.$portfolio-color-grey sizes.$portfolio-size-20;
   padding: sizes.$portfolio-size-15;
 }
 
@@ -184,7 +144,7 @@ p {
   border-radius: 50%;
   margin: sizes.$portfolio-size-10;
   box-sizing: border-box;
-  border: solid  #bdb3b3 sizes.$portfolio-size-20;
+  border: solid colors.$portfolio-color-grey sizes.$portfolio-size-20;
   padding: sizes.$portfolio-size-15;
 }
 
@@ -194,7 +154,7 @@ p {
   border-radius: 50%;
   margin: sizes.$portfolio-size-10;
   box-sizing: border-box;
-  border: solid  #bdb3b3 sizes.$portfolio-size-20;
+  border: solid  colors.$portfolio-color-grey sizes.$portfolio-size-20;
   padding: sizes.$portfolio-size-15;
 }
 
@@ -205,7 +165,7 @@ p {
   border-radius: 50%;
   margin: sizes.$portfolio-size-10;
   box-sizing: border-box;
-  border: solid  #bdb3b3 sizes.$portfolio-size-20;
+  border: solid colors.$portfolio-color-grey sizes.$portfolio-size-20;
   padding: sizes.$portfolio-size-15;
 }
 
@@ -215,7 +175,7 @@ p {
   border-radius: 50%;
   margin: sizes.$portfolio-size-10;
   box-sizing: border-box;
-  border: solid  #bdb3b3 sizes.$portfolio-size-20;
+  border: solid colors.$portfolio-color-grey sizes.$portfolio-size-20;
   padding: sizes.$portfolio-size-15;
 }
 
@@ -225,7 +185,7 @@ p {
   border-radius: 50%;
   margin: sizes.$portfolio-size-10;
   box-sizing: border-box;
-  border: solid  #bdb3b3 sizes.$portfolio-size-20;
+  border: solid colors.$portfolio-color-grey sizes.$portfolio-size-20;
   padding: sizes.$portfolio-size-15;
 }
 
@@ -235,41 +195,34 @@ p {
   border-radius: 50%;
   margin: sizes.$portfolio-size-10;
   box-sizing: border-box;
-  border: solid  #bdb3b3 sizes.$portfolio-size-20;
+  border: solid  colors.$portfolio-color-grey sizes.$portfolio-size-20;
   padding: sizes.$portfolio-size-15;
 }
 
-.techtext {
+.technology-title {
+  margin-top: sizes.$portfolio-size-40;
+}
+.technology-text {
   margin-left: sizes.$portfolio-size-80;
   margin-right: sizes.$portfolio-size-80;
   padding: sizes.$portfolio-size-20;
 }
 
-.techtitle {
-  position: relative;
-  bottom: sizes.$portfolio-size-250;
-  left: sizes.$portfolio-size-170;
-}
-
-.techimages {
+.technology-images {
   display: flex;
   flex-direction: column;
   position: relative;
   left: sizes.$portfolio-size-120;
 }
 
-.tech {
+.tech, .tech2 {
   display: flex;
   flex-direction: row;
-}
-
-.tech2 {
-  display: flex;
-  flex-direction: row;
+  margin-left: calc(-1 * sizes.$portfolio-size-20);
 }
 
 .techie {
-  background-color: #d1c7c7;
+  background-color: colors.$portfolio-color-grey-white;
   height: sizes.$portfolio-size-1050;
 }
 
@@ -284,6 +237,10 @@ p {
   margin: auto;
 }
 
+.wellbeing-text {
+  margin-bottom: sizes.$portfolio-size-50;
+}
+
 .fitness {
   margin-left: sizes.$portfolio-size-50;
   margin-right: sizes.$portfolio-size-50;
@@ -292,21 +249,25 @@ p {
 .fitness-images {
   display: flex;
   flex-direction: row;
-  margin: auto;
-  margin-left: sizes.$portfolio-size-90;
+  margin-left:calc(-2 * sizes.$portfolio-size-50);
   margin-right: sizes.$portfolio-size-90;
-
 }
 
-.mental {
+.fitness-text {
+  margin-bottom: 0;
+  padding-top: sizes.$portfolio-size-10;
+}
+
+.mental-health-container {
   margin-left: sizes.$portfolio-size-50;
   margin-right: sizes.$portfolio-size-50;
+  padding-top: sizes.$portfolio-size-20;
 }
 
-.mental-images {
+.mental-health-images {
   display: flex;
   flex-direction: row;
-  margin: auto;
+  margin-left: sizes.$portfolio-size-50;
 }
 
 @-webkit-keyframes fadeIn {

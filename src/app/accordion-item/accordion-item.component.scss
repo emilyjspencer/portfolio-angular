@@ -19,12 +19,12 @@
 .accordion-body {
   display: none;
   opacity: 0.6;
-  transition: opacity .29s;
+  transition: opacity 1.9s;
 }
 
 .accordion-body.active {
   display: block;
-  animation: fadeIn .9s;
+  animation: fadeIn 1.9s;
   -webkit-animation: fadeIn .8s;
 }
 

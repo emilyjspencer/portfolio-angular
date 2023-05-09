@@ -20,7 +20,7 @@ export class ContactComponent{
     this.state = true;
     setTimeout(() => {
       this.route.navigate(["/about"]);
-      }, 1500)
+      }, 1000)
    }
 
 }

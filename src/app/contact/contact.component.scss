@@ -22,5 +22,10 @@
  .home {
   margin-top: calc( -1 * sizes.$portfolio-size-36);
   margin-left: sizes.$portfolio-size-1100;
+  cursor: pointer;
+ }
+
+ i {
+  cursor: pointer;
  }
 
