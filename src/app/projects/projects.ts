@@ -33,7 +33,7 @@ export const PROJECTS: IProject[] = [
   subtitle: "",
   description: "Pristine Pics - a React application which allows you to upload your favourite pictures",
   image: "../../assets/images/pristinepics.png",
-  link: "http://guiltless-clouds.surge.sh",
+  link: "https://null-zipper.surge.sh/",
   githubLink: "https://github.com/emilyjspencer/Pristine-Pics",
   technologies: "React"
 },
