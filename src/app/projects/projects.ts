@@ -103,11 +103,11 @@ export const PROJECTS: IProject[] = [
 {
   title: "Guardian News",
   subtitle: "",
-  description: "A React application which calls on the Guardian API",
-  image: "../../assets/images/guardianmain.png",
-  link: "http://sable-notebook.surge.sh/",
-  githubLink: "https://github.com/emilyjspencer/Guardian-News-React.git",
-  technologies: "React, Axios, Guardian API"
+  description: "An Angular application which calls on the Guardian API",
+  image: "../../assets/images/guardiannews.png",
+  link: "https://dapper-distribution.surge.sh/",
+  githubLink: "https://github.com/emilyjspencer/Guardian-News-Angular",
+  technologies: "Angular, TypeScript, SCSS, Guardian API"
 },
 {
   title: "Perfume",
