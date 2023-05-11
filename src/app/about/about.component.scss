@@ -1,46 +1,39 @@
-@use '../../sizes.scss';
+@use "../../sizes.scss";
 
 .container {
-
   display: flex;
   flex-direction: column;
 
-  @media only screen
-  and (min-device-width: sizes.$portfolio-size-768)
-  and (max-device-width: sizes.$portfolio-size-1600)
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-  flex-direction: row;
+  @media only screen and (min-device-width: sizes.$portfolio-size-768) and (max-device-width: sizes.$portfolio-size-1600) and (-webkit-min-device-pixel-ratio: 1) {
+    flex-direction: row;
   }
 }
 
 .logo {
-  width: sizes.$portfolio-size-600;
-  margin-left: sizes.$portfolio-size-70;
+  width: sizes.$portfolio-size-700;
+
+  @media only screen and (min-device-width: sizes.$portfolio-size-768) and (max-device-width: sizes.$portfolio-size-1600) and (-webkit-min-device-pixel-ratio: 1) {
+    width: sizes.$portfolio-size-600;
+    margin-left: sizes.$portfolio-size-70;
+  }
 }
 
 #emily {
-
   width: sizes.$portfolio-size-642;
   height: sizes.$portfolio-size-620;
+  margin-left: 0;
 
-  @media only screen
-  and (min-device-width: sizes.$portfolio-size-768)
-  and (max-device-width: sizes.$portfolio-size-1600)
-  and (-webkit-min-device-pixel-ratio: 1) {
-  width: sizes.$portfolio-size-600;
-
+  @media only screen and (min-device-width: sizes.$portfolio-size-768) and (max-device-width: sizes.$portfolio-size-1600) and (-webkit-min-device-pixel-ratio: 1) {
+    width: sizes.$portfolio-size-600;
   }
-
 }
-
 
 p {
   text-align: center;
   font-size: sizes.$portfolio-size-16;
   margin-left: sizes.$portfolio-size-10;
   margin-right: sizes.$portfolio-size-10;
-  margin-top: calc( -1 * sizes.$portfolio-size-100);
+  margin-top: calc(-1 * sizes.$portfolio-size-100);
   padding-left: sizes.$portfolio-size-10;
   padding-right: sizes.$portfolio-size-10;
 }
@@ -51,16 +44,34 @@ p {
 }
 
 @-webkit-keyframes fadeIn {
-  from { opacity: 0; transform: scale(0); }
-    to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 @keyframes fadeIn {
-  from { opacity: 0; transform: scale(0); }
-    to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 img {
-display: block;
+  margin-left: sizes.$portfolio-size-80;
+
+  display: block;
   animation: fadeIn 1.9s;
-  -webkit-animation: fadeIn .8s;
+  -webkit-animation: fadeIn 0.8s;
+
+  @media only screen and (min-device-width: sizes.$portfolio-size-768) and (max-device-width: sizes.$portfolio-size-1600) and (-webkit-min-device-pixel-ratio: 1) {
+    margin-left: 0;
+  }
 }
