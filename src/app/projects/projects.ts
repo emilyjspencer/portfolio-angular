@@ -38,6 +38,24 @@ export const PROJECTS: IProject[] = [
   technologies: "React"
 },
 {
+  title: "Guardian News",
+  subtitle: "",
+  description: "An Angular application which calls on the Guardian API",
+  image: "../../assets/images/guardiannews.png",
+  link: "https://dapper-distribution.surge.sh/",
+  githubLink: "https://github.com/emilyjspencer/Guardian-News-Angular",
+  technologies: "Angular, TypeScript, SCSS, Guardian API"
+},
+{
+  title: "Portfolio (Angular)",
+  subtitle: "",
+  description: "Portfolio site I built using Angular - this site!!!",
+  image: "../../assets/images/2.png",
+  link: "",
+  githubLink: "https://github.com/emilyjspencer/portfolio-angular.git",
+  technologies: "Angular"
+},
+{
   title: "Portfolio (React)",
   subtitle: "",
   description: "Portfolio site I built using React",
@@ -45,15 +63,6 @@ export const PROJECTS: IProject[] = [
   link: "",
   githubLink: "https://github.com/emilyjspencer/Portfolio-Emily",
   technologies: "React"
-},
-{
-  title: "Portfolio (Angular)",
-  subtitle: "",
-  description: "Portfolio site I built using Angular",
-  image: "../../assets/images/2.png",
-  link: "",
-  githubLink: "https://github.com/emilyjspencer/portfolio-angular.git",
-  technologies: "Angular"
 },
 {
   title: "Wellbeing (WIP)",
@@ -71,7 +80,7 @@ export const PROJECTS: IProject[] = [
   image: "../../assets/images/404.jpg",
   link: "",
   githubLink: "https://github.com/emilyjspencer/acebook-inSANE",
-  technologies: "Rails, JavaScript"
+  technologies: "Rails, JavaScript, TravisCI"
 },
 {
   title: "Medication Tracker",
@@ -101,22 +110,13 @@ export const PROJECTS: IProject[] = [
   technologies: "Python, Django, React, NLTK, TensorFlow, TFLearn, UnitTest, Cypress"
 },
 {
-  title: "Guardian News",
-  subtitle: "",
-  description: "An Angular application which calls on the Guardian API",
-  image: "../../assets/images/guardiannews.png",
-  link: "https://dapper-distribution.surge.sh/",
-  githubLink: "https://github.com/emilyjspencer/Guardian-News-Angular",
-  technologies: "Angular, TypeScript, SCSS, Guardian API"
-},
-{
   title: "Perfume",
   subtitle: "",
   description: "A Perfume shop application built with Java and JSP",
   image: "../../assets/images/paco.jpg",
   link: "",
   githubLink: "https://github.com/emilyjspencer/Perfume",
-  technologies: "Java, JSP, Spring Boot"
+  technologies: "Java, JSP, Spring Boot, JUnit"
 },
 {
   title: "Bookmarks",

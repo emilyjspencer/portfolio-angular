@@ -1,8 +1,17 @@
 @use '../../sizes.scss';
 
 .container {
+
   display: flex;
+  flex-direction: column;
+
+  @media only screen
+  and (min-device-width: sizes.$portfolio-size-768)
+  and (max-device-width: sizes.$portfolio-size-1600)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
   flex-direction: row;
+  }
 }
 
 .logo {
@@ -11,8 +20,18 @@
 }
 
 #emily {
-  width: sizes.$portfolio-size-600;
+
+  width: sizes.$portfolio-size-642;
   height: sizes.$portfolio-size-620;
+
+  @media only screen
+  and (min-device-width: sizes.$portfolio-size-768)
+  and (max-device-width: sizes.$portfolio-size-1600)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  width: sizes.$portfolio-size-600;
+
+  }
+
 }
 
 

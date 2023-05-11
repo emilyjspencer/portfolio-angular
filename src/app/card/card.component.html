@@ -6,14 +6,13 @@
   </div>
   <img src="{{ image }}" alt="photo of project" />
   <div class="card-content">
-    <p>
+    <strong><p>
       {{ description }}
-    </p>
+    </p></strong>
     <p>Technologies used: {{ technologies }}</p>
     <div *ngIf="link">
       <a href="{{ link }}">Click for deployed link:</a>
     </div>
-    <br />
     <br />
     <a href="{{ githubLink }}">Link to GitHub</a>
   </div>

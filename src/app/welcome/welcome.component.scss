@@ -33,8 +33,39 @@ h2 {
 }
 
 .social {
+  display: flex;
+  flex-direction: row;
   margin-top: calc(-1 * sizes.$portfolio-size-90);
-  margin-left: sizes.$portfolio-size-20;
+  margin-left: sizes.$portfolio-size-200;
+
+
+    @media only screen
+  and (min-device-width: sizes.$portfolio-size-768)
+  and (max-device-width: sizes.$portfolio-size-1024)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+  margin-left: sizes.$portfolio-size-180;
+  }
+
+
+  @media screen
+  and (min-device-width: sizes.$portfolio-size-1200)
+  and (max-device-width: sizes.$portfolio-size-1600)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    margin-left: sizes.$portfolio-size-420
+    //sizes.$portfolio-size-700;
+}
+
+ // @media only screen and (min-width: sizes.$portfolio-size-1024) {
+
+   // margin-left: sizes.$portfolio-size-300;
+    //}
+
+    //@media only screen and (min-width: sizes.$portfolio-size-1140) {
+
+      //margin-left: sizes.$portfolio-size-510;
+      //}
+
 }
 
 i {
