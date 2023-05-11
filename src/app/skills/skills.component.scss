@@ -1,9 +1,15 @@
-@use '../../sizes.scss';
+@use "../../sizes.scss";
 
 .accordion-container {
+  width: 800px;
+  height: 500px;
   padding: sizes.$portfolio-size-40;
   padding-top: 0;
   margin-left: sizes.$portfolio-size-160;
+
+  @media screen and (min-device-width: sizes.$portfolio-size-1200) and (max-device-width: sizes.$portfolio-size-1600) and (-webkit-min-device-pixel-ratio: 1) {
+    margin-left: sizes.$portfolio-size-220;
+  }
 }
 
 h2,
@@ -15,6 +21,26 @@ p {
   text-align: center;
   margin-top: sizes.$portfolio-size-40;
   margin-bottom: sizes.$portfolio-size-20;
+}
+
+.heading-container {
+  display: none;
+
+  @media screen and (min-device-width: sizes.$portfolio-size-1200) and (max-device-width: sizes.$portfolio-size-1600) and (-webkit-min-device-pixel-ratio: 1) {
+    display: block;
+  }
+
+
+}
+
+.title {
+  margin-left: 800px;
+  margin-top: sizes.$portfolio-size-40;
+  margin-bottom: sizes.$portfolio-size-20;
+
+  @media screen and (min-device-width: sizes.$portfolio-size-1200) and (max-device-width: sizes.$portfolio-size-1600) and (-webkit-min-device-pixel-ratio: 1) {
+    margin-left: 0;
+  }
 }
 
 .skills {
@@ -32,14 +58,14 @@ p {
 
 .experience-container {
   padding-right: sizes.$portfolio-size-70;
-  padding-left: sizes.$portfolio-size-40;
-  margin-right: sizes.$portfolio-size-150;
+  margin-right: sizes.$portfolio-size-240;
+  width: 90%;
 }
 
 .education-container {
   padding-right: sizes.$portfolio-size-70;
   padding-left: sizes.$portfolio-size-20;
-  margin-right: sizes.$portfolio-size-150;
+  margin-left: calc(-1 * sizes.$portfolio-size-60);
 
   .education-container.h5 {
     font-size: sizes.$portfolio-size-16;
@@ -54,25 +80,38 @@ img {
 }
 
 #london-bottom {
-  margin-top: calc(-1 * sizes.$portfolio-size-210);
-  margin-left: calc(-1 * sizes.$portfolio-size-240);
-}
+  display: none;
 
-#london-top {
-  overflow: hidden;
+  @media screen and (min-device-width: sizes.$portfolio-size-1200) and (max-device-width: sizes.$portfolio-size-1600) and (-webkit-min-device-pixel-ratio: 1) {
+    display: block;
+    margin-top: calc(-1 * sizes.$portfolio-size-210);
+    margin-left: calc(-1 * sizes.$portfolio-size-240);
+  }
 }
 
 @-webkit-keyframes fadeIn {
-  from { opacity: 0; transform: scale(0); }
-    to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 @keyframes fadeIn {
-  from { opacity: 0; transform: scale(0); }
-    to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 img {
-display: block;
+  display: block;
   animation: fadeIn 1.9s;
   -webkit-animation: fadeIn 1.8s;
 }
