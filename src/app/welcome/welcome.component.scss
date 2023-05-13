@@ -44,7 +44,7 @@ h2 {
   display: flex;
   flex-direction: row;
   margin-top: calc(-1 * sizes.$portfolio-size-90);
-  margin-left: sizes.$portfolio-size-200;
+  margin-left: sizes.$portfolio-size-180;
 
   @media only screen and (min-device-width: sizes.$portfolio-size-768) and (max-device-width: sizes.$portfolio-size-1024) and (-webkit-min-device-pixel-ratio: 1) {
     margin-left: sizes.$portfolio-size-180;

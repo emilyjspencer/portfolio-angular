@@ -1,15 +1,7 @@
 import { IProject } from "src/interfaces/IProject"
 
 export const PROJECTS: IProject[] = [
-  {
-  title: "Alohomora",
-  subtitle: "",
-  description:  "An application for Harry Potter fans. Complete with chatroom, quiz, characters and spells pages",
-  image: "../../assets/images/alohomora.png",
-  link: "https://5f88db6e46264f4cec7743c1--thirsty-johnson-2e67ef.netlify.app",
-  githubLink: "https://github.com/emilyjspencer/Alohomora--2.0",
-  technologies: "React, NodeJS, MaterialUI"
-},
+
 {
   title: "Chitter",
   subtitle: "",
@@ -27,6 +19,24 @@ export const PROJECTS: IProject[] = [
   link: "",
   githubLink: "https://github.com/emilyjspencer/Global-Reads",
   technologies: "Ruby, Rails"
+},
+{
+  title: "Perfume",
+  subtitle: "",
+  description: "A Perfume shop application built with Java and JSP",
+  image: "../../assets/images/paco.jpg",
+  link: "",
+  githubLink: "https://github.com/emilyjspencer/Perfume",
+  technologies: "Java, JSP, Spring Boot, JUnit"
+},
+{
+  title: "Alohomora",
+  subtitle: "",
+  description:  "An application for Harry Potter fans. Complete with chatroom, quiz, characters and spells pages",
+  image: "../../assets/images/alohomora.png",
+  link: "https://5f88db6e46264f4cec7743c1--thirsty-johnson-2e67ef.netlify.app",
+  githubLink: "https://github.com/emilyjspencer/Alohomora--2.0",
+  technologies: "React, NodeJS, MaterialUI"
 },
 {
   title: "Pristine Pics",
@@ -71,7 +81,7 @@ export const PROJECTS: IProject[] = [
   image: "../../assets/images/wellbeing.jpg",
   link: "",
   githubLink: "https://github.com/emilyjspencer/wellbeing-full.git",
-  technologies: "Angular, ChartJS, AWS Lambda, RxJS"
+  technologies: "Angular, NestJS ChartJS, AWS Lambda, RxJS, Jest, Cypress"
 },
 {
   title: "Acebook",
@@ -108,15 +118,6 @@ export const PROJECTS: IProject[] = [
   link: "https://github.com/nikimanoledaki/finbot-api",
   githubLink: "https://github.com/nikimanoledaki/finbot",
   technologies: "Python, Django, React, NLTK, TensorFlow, TFLearn, UnitTest, Cypress"
-},
-{
-  title: "Perfume",
-  subtitle: "",
-  description: "A Perfume shop application built with Java and JSP",
-  image: "../../assets/images/paco.jpg",
-  link: "",
-  githubLink: "https://github.com/emilyjspencer/Perfume",
-  technologies: "Java, JSP, Spring Boot, JUnit"
 },
 {
   title: "Bookmarks",

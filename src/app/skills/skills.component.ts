@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { SkillsService } from '../skills.service';
 import { ISkill } from 'src/interfaces/ISkill';
 
@@ -9,6 +9,8 @@ import { ISkill } from 'src/interfaces/ISkill';
 })
 export class SkillsComponent  {
 
+  mobile = false;
+  public currentWindowWidth!: number;
 
   @Input() frontend: ISkill[] = []
   @Input() design: ISkill[] = [];
@@ -22,6 +24,11 @@ export class SkillsComponent  {
 
   constructor(private skill: SkillsService){}
 
+  @HostListener('window:resize')
+onResize() {
+  this.currentWindowWidth = window.innerWidth
+}
+
   ngOnInit() {
    this.fetchFrontendSkills();
    this.fetchDesignSkills();
@@ -29,6 +36,7 @@ export class SkillsComponent  {
    this.fetchOtherSkills();
    this.fetchMakersSkills();
    this.fetchFdmSkills();
+   this.currentWindowWidth = window.innerWidth;
   }
 
   fetchFrontendSkills() {

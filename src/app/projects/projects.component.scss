@@ -6,11 +6,12 @@ body {
 }
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: sizes.$portfolio-size-4;
 
   @media only screen and (min-device-width: sizes.$portfolio-size-768) and (max-device-width: sizes.$portfolio-size-1600) and (-webkit-min-device-pixel-ratio: 1) {
   margin-left: 150px;
+  grid-template-columns: repeat(2, 1fr);
   }
 
   @media only screen and (min-device-width: sizes.$portfolio-size-1200) and (max-device-width: sizes.$portfolio-size-1600) and (-webkit-min-device-pixel-ratio: 1) {

@@ -1,13 +1,60 @@
 <app-nav></app-nav>
-<br>
-<br>
+<br />
+<br />
 <div class="heading-container">
-<h3 class="title">Skills, Education and experience</h3>
-<img id="london-top" src="../../assets/images/london.png" alt="silhouette of london"/>
-<p class="skills">
-  My education and professional experience has led me to learn and gain experience with a
-  range of technologies:
-</p>
+  <h3 class="title">Skills, Education and experience</h3>
+  <img
+    id="london-top"
+    src="../../assets/images/london.png"
+    alt="silhouette of london"
+  />
+  <p class="skills">
+    My education and professional experience has led me to learn and gain
+    experience with a range of technologies:
+  </p>
+</div>
+<div class="skills-on-mobile-container">
+  <p>Skills:</p>
+  <br />
+  <br />
+  <ul *ngFor="let skill of frontend">
+    <li>
+      <strong>{{ skill.title }}</strong>
+      <br />
+      <br />
+      {{ skill.description }}
+    </li>
+  </ul>
+  <br />
+  <br />
+  <ul *ngFor="let skill of design">
+    <li>
+      <strong>{{ skill.title }}</strong>
+      <br />
+      <br />
+      {{ skill.description }}
+    </li>
+  </ul>
+  <br />
+  <br />
+  <ul *ngFor="let skill of backend">
+    <li>
+      <strong>{{ skill.title }}</strong>
+      <br />
+      <br />
+      {{ skill.description }}
+    </li>
+  </ul>
+  <br />
+  <br />
+  <ul *ngFor="let skill of other">
+    <li>
+      <strong>{{ skill.title }}</strong>
+      <br />
+      <br />
+      {{ skill.description }}
+    </li>
+  </ul>
 </div>
 <div class="accordion-container">
   <app-accordion *ngFor="let skill of frontend">
@@ -43,15 +90,16 @@
     <p class="education">
       My education has been very broad; I studied Modern Languages, Maths and
       Biology at A Level, with an AS Level in Economics. I went on to study
-      French, German, Spanish and Dutch at the <strong>University of Sheffield</strong>
-      <br>
-      <br>
-       At the end of 2019, I joined <strong>Makers Academy</strong>, a leading coding bootcamp where I gained exposure
-      to Ruby, Rails and JavaScript, before joining the <strong>FDM programme</strong> in January
-      2021, where I received training in Java, JSP, Spring Boot, and other technologies.
+      French, German, Spanish and Dutch at the
+      <strong>University of Sheffield</strong>
+      <br />
+      <br />
+      At the end of 2019, I joined <strong>Makers Academy</strong>, a leading
+      coding bootcamp where I gained exposure to Ruby, Rails and JavaScript,
+      before joining the <strong>FDM programme</strong> in January 2021, where I
+      received training in Java, JSP, Spring Boot, and other technologies.
     </p>
   </div>
-
 
   <app-accordion *ngFor="let skill of makers">
     <app-accordion-item
@@ -67,16 +115,22 @@
       [content]="skill.description"
     ></app-accordion-item>
   </app-accordion>
-
-  <div class="experience-container">
-  <h3>Experience</h3>
-  <p class="experience">
-    I have been working as a software development consultant/contractor for FDM
-    following completion of my training in 2021. I have so far been placed at two
-    financial institutions: an investment bank and an asset management firm.
-  </p>
-  <img id="london-bottom" src="../../assets/images/london.png" alt="silhouette of london"/>
-  </div>
 </div>
 
-<app-footer></app-footer>
+  <div class="experience-container">
+    <h3 class="experience-title">Experience</h3>
+    <p class="experience">
+      I have been working as a software development consultant/contractor for
+      FDM following completion of my training in 2021. I have so far been placed
+      at two financial institutions: an investment bank and an asset management
+      firm.
+    </p>
+    <img
+      id="london-bottom"
+      src="../../assets/images/london.png"
+      alt="silhouette of london"
+    />
+  </div>
+
+  <app-footer></app-footer>
+

@@ -2,15 +2,19 @@
 @use "../../colors.scss";
 
 .navbar {
-  width: 90%;
   padding-left: sizes.$portfolio-size-400;
   text-decoration: none;
-  background-color: colors.$portfolio-color-dark-grey;
-  color: colors.$portfolio-color-pure-white;
+  color: colors.$portfolio-color-dark-grey;
   height: sizes.$portfolio-size-40;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: 768px) {
+   width: 90%;
+   background-color: colors.$portfolio-color-dark-grey;
+   color: colors.$portfolio-color-pure-white;
+  }
 }
 
 a:link,
@@ -18,13 +22,17 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
+  color: colors.$portfolio-color-dark-grey;
+  @media (min-width: 768px) {
   color: colors.$portfolio-color-pure-white;
+  }
 }
 
 .navbar-item {
   padding: sizes.$portfolio-size-20;
   text-align: center;
   vertical-align: center;
+  color: gray;
 }
 
 .logo {

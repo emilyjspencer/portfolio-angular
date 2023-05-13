@@ -40,7 +40,19 @@ p {
 
 .text {
   margin-right: sizes.$portfolio-size-40;
+  margin-left: 180px;
   margin-top: sizes.$portfolio-size-20;
+  max-width: 300px;
+
+  @media (min-width: 768px) {
+     max-width: 600px;
+     margin-left: 60px;
+  }
+
+  @media (min-width: 1023px) {
+  margin-left: 0;
+  }
+
 }
 
 @-webkit-keyframes fadeIn {

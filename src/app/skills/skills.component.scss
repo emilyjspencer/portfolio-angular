@@ -1,11 +1,16 @@
 @use "../../sizes.scss";
 
 .accordion-container {
+  display: none;
   width: 800px;
   height: 500px;
   padding: sizes.$portfolio-size-40;
   padding-top: 0;
   margin-left: sizes.$portfolio-size-160;
+
+  @media (min-width: 768px) {
+    display: block;
+ }
 
   @media screen and (min-device-width: sizes.$portfolio-size-1200) and (max-device-width: sizes.$portfolio-size-1600) and (-webkit-min-device-pixel-ratio: 1) {
     margin-left: sizes.$portfolio-size-220;
@@ -23,6 +28,15 @@ p {
   margin-bottom: sizes.$portfolio-size-20;
 }
 
+.skills-on-mobile-container {
+  @media (min-width: 768px) {
+    display: none;
+  }
+  p {
+    margin-left: 240px;
+    font-weight: bold;
+  }
+}
 .heading-container {
   display: none;
 
@@ -54,12 +68,30 @@ p {
 
 .experience {
   font-size: sizes.$portfolio-size-16;
+  margin-left: 120px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+  margin-left: 0;
+  }
+}
+
+.experience-title {
+  margin-left: 210px;
+  @media (min-width: 768px) {
+  margin-left: 0;
+  }
 }
 
 .experience-container {
   padding-right: sizes.$portfolio-size-70;
   margin-right: sizes.$portfolio-size-240;
   width: 90%;
+
+  @media (min-width: 768px) {
+    margin-top: 340px;
+  }
+
 }
 
 .education-container {
@@ -82,10 +114,14 @@ img {
 #london-bottom {
   display: none;
 
+  @media (min-width: 768px) {
+  padding-left: 250px;
+  }
+
   @media screen and (min-device-width: sizes.$portfolio-size-1200) and (max-device-width: sizes.$portfolio-size-1600) and (-webkit-min-device-pixel-ratio: 1) {
     display: block;
     margin-top: calc(-1 * sizes.$portfolio-size-210);
-    margin-left: calc(-1 * sizes.$portfolio-size-240);
+    margin-left: calc(-1 * sizes.$portfolio-size-270);
   }
 }
 
