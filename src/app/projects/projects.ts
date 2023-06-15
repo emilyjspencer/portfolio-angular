@@ -21,6 +21,15 @@ export const PROJECTS: IProject[] = [
   technologies: "Ruby, Rails"
 },
 {
+  title: "Dancewear",
+  subtitle: "",
+  description: "A dancewear shop (a slight imitation of Dance Direct",
+  image: '../../assets/images/dance.png',
+  link: "",
+  githubLink: "https://github.com/emilyjspencer/dancewear-app",
+  technologies: "Java, Spring Boot, React, MySQL, JUnit, Jest"
+},
+{
   title: "Perfume",
   subtitle: "",
   description: "A Perfume shop application built with Java and JSP",
