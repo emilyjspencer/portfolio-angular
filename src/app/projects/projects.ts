@@ -30,6 +30,15 @@ export const PROJECTS: IProject[] = [
   technologies: "Java, Spring Boot, React, MySQL, JUnit, Jest"
 },
 {
+  title: "Tradus",
+  subtitle: "",
+  description: "A currency converter",
+  image: '../../assets/images/tradus.png',
+  link: "https://64bcf4fe624b41084066d525--phenomenal-druid-6b1876.netlify.app/",
+  githubLink: "",
+  technologies: "Angular, HttpClient, Tailwind CSS"
+},
+{
   title: "Perfume",
   subtitle: "",
   description: "A Perfume shop application built with Java and JSP",
