@@ -34,7 +34,7 @@ export const PROJECTS: IProject[] = [
   subtitle: "",
   description: "A currency converter",
   image: '../../assets/images/tradus.png',
-  link: "https://64bcf4fe624b41084066d525--phenomenal-druid-6b1876.netlify.app/",
+  link: "https://64bd565ba6f4893f194be119--graceful-beijinho-fee577.netlify.app/",
   githubLink: "",
   technologies: "Angular, HttpClient, Tailwind CSS"
 },
