@@ -23,7 +23,7 @@ export const PROJECTS: IProject[] = [
 {
   title: "Dancewear",
   subtitle: "",
-  description: "A dancewear shop (a slight imitation of Dance Direct",
+  description: "A dancewear shop (based on my favourite dancewear store: Dance Direct)",
   image: '../../assets/images/dance.png',
   link: "",
   githubLink: "https://github.com/emilyjspencer/dancewear-app",
@@ -146,6 +146,16 @@ export const PROJECTS: IProject[] = [
   githubLink: "https://github.com/emilyjspencer/Bookmarks.git",
   technologies: "Ruby, Sinatra, SQL, PostgreSQL"
 },
+{
+  title: "Recruitment Portal",
+  subtitle: "Code not available",
+  description: "A Recruitment portal. A project created with other FDM colleagues.",
+  image: "../../assets/images/placeholder.png",
+  link: "",
+  githubLink: "",
+  technologies: "Java, Spring Boot, React, MySQL"
+},
+
 
 
 
